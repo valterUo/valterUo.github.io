@@ -13,11 +13,17 @@
     </image>
     
     <item>
-      <title>Big Data seminar presentation 2022</title>
-      <link>https://valteruo.github.io/slides/bigdataseminar/</link>
-      <pubDate>Tue, 02 Nov 2021 13:30:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/slides/bigdataseminar/</guid>
-      <description></description>
+      <title>Stability Index of Real Varieties – Theorem of Bröcker and Scheiderer</title>
+      <link>https://valteruo.github.io/publication/masters_thesis/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/masters_thesis/</guid>
+      <description>&lt;p&gt;In this work, I prove the theorem of Bröcker and Scheiderer for basic open semi-algebraic sets. The theorem provides an upper bound for a stability index of a real variety. The theory is based on real closed fields which generalize real numbers. A real variety is a subset of a real closed field that is defined by polynomial equalities. Every semi-algebraic set is defined by a boolean combination of polynomial equations and inequalities of the sign conditions involving a finite number of polynomials. The basic semi-algebraic sets are those semi-algebraic sets that are defined solely by the sign conditions. In other words, we can construct semi-algebraic sets from the basic semi-algebraic sets by taking the finite unions, intersections, and complements of the basic semi-algebraic sets.&lt;/p&gt;
+&lt;p&gt;Then the stability index of a real variety indicates the upper bound of numbers of polynomials that are required to express an arbitrary semi-algebraic subset of the variety. The theorem of Bröcker and Scheiderer shows that such upper bound exists and is finite for basic open semi-algebraic subsets of a real variety.&lt;/p&gt;
+&lt;p&gt;This work aims to be detailed in the proofs and represent sufficient prerequisites and references. The first chapter introduces the topic generally and motivates to study the theorem. The second chapter provides advanced prerequisites in algebra. One of such results is the factorial theorem of a total ring of fractions. Other advanced topics include radicals, prime ideals, associative algebras, a dimension of a ring, and various quotient structures.&lt;/p&gt;
+&lt;p&gt;The third chapter defines real closed fields and semi-algebraic sets that are the fundamental building blocks of the theory. The third chapter also develops the theory of quadratic forms. The main result of this chapter is Witt’s cancellation theorem. We also shortly describe the Tsen-Lang theorem.&lt;/p&gt;
+&lt;p&gt;The fourth chapter is about Pfister forms. Pfister forms are special kinds of quadratic forms that we extensively use in the proof of the main theorem. First, we define general Pfister forms over fields. Then we develop their theory over the fields of rational functions. Generally, Pfister forms share multiple similar properties as quadratic forms.&lt;/p&gt;
+&lt;p&gt;The fifth chapter represents one- and two-dimensional examples of the main theorem. These examples are based on research that is done on constructive approaches to the theorem of Bröcker and Scheiderer. The examples clarify and motivate the result from an algorithmic perspective. Finally, we prove the main theorem of the work. The proof is heavily based on Pfister forms.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,30 +31,6 @@
       <link>https://valteruo.github.io/talk/finnish-poetry-generation-using-fine-tuned-mbart/</link>
       <pubDate>Tue, 02 Nov 2021 13:30:00 +0000</pubDate>
       <guid>https://valteruo.github.io/talk/finnish-poetry-generation-using-fine-tuned-mbart/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finnish Poetry Generation Using Fine-tuned mBART</title>
-      <link>https://valteruo.github.io/slides/bmw/</link>
-      <pubDate>Tue, 02 Nov 2021 13:30:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/slides/bmw/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finnish Poetry Generation Using Fine-tuned mBART</title>
-      <link>https://valteruo.github.io/slides/qhack2022/</link>
-      <pubDate>Tue, 02 Nov 2021 13:30:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/slides/qhack2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finnish Poetry Generation Using Fine-tuned mBART</title>
-      <link>https://valteruo.github.io/slides/quantumware/</link>
-      <pubDate>Tue, 02 Nov 2021 13:30:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/slides/quantumware/</guid>
       <description></description>
     </item>
     
