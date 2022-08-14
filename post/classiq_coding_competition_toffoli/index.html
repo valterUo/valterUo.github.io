@@ -1,0 +1,2284 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Valter Uotila" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This blog post discusses my studies on Classiq&#39;s coding competition problem on decomposing multi-controlled CNOT gates. I represent three different solutions. The first solution does not use ancilla qubits, the second solution utilizes them, and the third applies quantum machine learning to simulate the circuit." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://valteruo.github.io/post/classiq_coding_competition_toffoli/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.d3fbabf3e02f0a40f84592dd992c35ca.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://valteruo.github.io/post/classiq_coding_competition_toffoli/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@wowchemy" />
+    <meta property="twitter:creator" content="@wowchemy" />
+  
+  <meta property="og:site_name" content="Valter" />
+  <meta property="og:url" content="https://valteruo.github.io/post/classiq_coding_competition_toffoli/" />
+  <meta property="og:title" content="Studies on Multi-controlled CNOT Decompositions | Valter" />
+  <meta property="og:description" content="This blog post discusses my studies on Classiq&#39;s coding competition problem on decomposing multi-controlled CNOT gates. I represent three different solutions. The first solution does not use ancilla qubits, the second solution utilizes them, and the third applies quantum machine learning to simulate the circuit." /><meta property="og:image" content="https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-06-24T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-06-24T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://valteruo.github.io/post/classiq_coding_competition_toffoli/"
+  },
+  "headline": "Studies on Multi-controlled CNOT Decompositions",
+  
+  "datePublished": "2022-06-24T00:00:00Z",
+  "dateModified": "2022-06-24T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Valter Uotila"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Valter",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "This blog post discusses my studies on Classiq's coding competition problem on decomposing multi-controlled CNOT gates. I represent three different solutions. The first solution does not use ancilla qubits, the second solution utilizes them, and the third applies quantum machine learning to simulate the circuit."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Studies on Multi-controlled CNOT Decompositions | Valter</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="da1beed4ab595d6f70bdea953cc630bc" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.9e9fa4b2ccd29f9edfae161d14d2effd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Valter</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Valter</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Presentations</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Studies on Multi-controlled CNOT Decompositions</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Valter Uotila</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 24, 2022
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    18 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/classiq-coding-competition/">Classiq coding competition</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="introduction">Introduction</h2>
+<p><a href="https://www.classiq.io/" target="_blank" rel="noopener">Classiq</a> organized an interesting quantum coding competition in May and June 2022. The competition consisted of four problems: <a href="https://www.classiq.io/competition/kakuro" target="_blank" rel="noopener">Kakuro</a>, <a href="https://www.classiq.io/competition/toffoli" target="_blank" rel="noopener">decomposing multi-control CNOT gate</a>, <a href="https://www.classiq.io/competition/hamiltonian" target="_blank" rel="noopener">Hamiltonian simulation</a> and <a href="https://www.classiq.io/competition/state-preparation" target="_blank" rel="noopener">log-normal state preparation</a>.</p>
+<p>In this blog post, I represent my studies on the general problem: decomposing the multi-control CNOT gate. Classiq did not consider this solution among the best, but I think it is worth publishing the solution proposal as a blog post. The competition had simple but somewhat strict judging criteria: the best solutions are those which have the shortest circuit depth. Instead of actually concentrating on reaching the minimum circuit depth, I sketched three solutions with different initial conditions:</p>
+<ol>
+<li>What happens if we perform the decomposition without ancilla qubits?</li>
+<li>What happens when we use ancilla qubits?</li>
+<li>Can we use quantum machine learning to estimate multi-controlled CNOT gates even though we will have some errors?</li>
+</ol>
+<p>All my answers are more or less just drafts, but probably, especially the quantum machine learning approach, might be interesting to develop further.</p>
+<p>The original Classiq&rsquo;s problem is decomposing an MCX gate with 14 control qubits into single-qubit and double-qubit CNOT gates using at most five ancilla qubits. This blog post should point out how essential ancilla qubits are in decompositions. For the case when we do not use ancilla qubits, the circuit becomes unpractically long and sometimes impossible to construct. After working on the topic, I thought that ancilla qubits, in some sense, resemble &ldquo;quantum memory.&rdquo;</p>
+<p>Because the number 14 in the problem description feels like an arbitrary number for control qubits, the code in this blog post calculates a possible decomposition for any given number of control qubits depending on the user&rsquo;s input. I base the idea on the <a href="http://csis.pace.edu/~ctappert/cs837-19spring/QC-textbook.pdf" target="_blank" rel="noopener">classical book of Niels and Chuang</a> and the <a href="https://algassert.com/circuits/2015/06/22/Using-Quantum-Gates-instead-of-Ancilla-Bits.html" target="_blank" rel="noopener">excellent blog post</a> by Craig Gidney. Also, the paper <a href="https://arxiv.org/abs/quant-ph/9503016v1" target="_blank" rel="noopener">Elementary gates for quantum computation</a> gives some ideas.</p>
+<p>When facing this kind of problem, maybe everyone first opens the classical book of Niels and Chuang. One can find there the following exercise:</p>
+<p><em><strong>Exercise 4.29: Find a circuit containing $\mathcal{O}(n^2)$ Toffoli, CNOT, and single qubits gates that implement a $C^n(X)$ gate for $n > 3$ using no work qubits.</strong></em></p>
+<p>This exercise appears to be surprisingly deep and hard. It is also connected to the problem in the competition, although it does not include the idea of minimal depth. The <a href="https://algassert.com/circuits/2015/06/22/Using-Quantum-Gates-instead-of-Ancilla-Bits.html" target="_blank" rel="noopener">blog post</a> by Craig Gidney is about this exercise.</p>
+<p>My contribution is the explanation in this document and the implementation that works for any MCX gate. I completed the implementation with Pennylane because it allows me to code recursive structures easily. I use Qiskit to describe and visualize the method.</p>
+<p>First, we import some needed packages.</p>
+<pre><code>import json
+import pennylane as qml
+from pennylane import numpy as np
+from qiskit import QuantumCircuit, QuantumRegister
+from qiskit.circuit.library.standard_gates import SXGate, SGate, TGate, IGate, MCXGate
+</code></pre>
+<h2 id="solution-proposal-without-ancilla-qubits">Solution proposal without ancilla qubits</h2>
+<h3 id="square-roots-of-not-gate-and-finding-fundamental-decompositions-with-gidney-niels-and-chuang">Square roots of NOT gate and finding fundamental decompositions with Gidney, Niels and Chuang</h3>
+<p>As Gidney explains in the <a href="https://algassert.com/circuits/2015/06/22/Using-Quantum-Gates-instead-of-Ancilla-Bits.html" target="_blank" rel="noopener">blog post</a>, every logical quantum gate has the corresponding square root gate. When we note the fact that diagonal matrices are easy to square and
+
+$$
+Z = \begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix},
+$$
+
+we obtain that
+
+$$
+\sqrt[n]{Z} = \begin{bmatrix}
+1 & 0 \\
+0 & e^{i\frac{\pi}{n}}
+\end{bmatrix}.
+$$
+</p>
+<p>When we change the computational basis to Hadamard -basis, taking the square roots becomes (at least theoretically) easier: $X = HZH$. That is also why we have Hadamard-gates in the Classiq&rsquo;s example decomposition in the problem description. The $T$-gates and $S$-gates are the certain square roots of $Z$-gate, $T = \sqrt[4]{Z}$ and $S = \sqrt[2]{Z}$. So $T$ and $S$ gates are just a clever way to hide $X$ gates in the decomposition! Gidney reads Niels and Chuang very carefully and notices the power of the following circuit, which corresponds to the Toffoli gate:</p>
+<pre><code>qr = QuantumRegister(3)
+circuit = QuantumCircuit(qr)
+
+circuit.append(SXGate().control(), [qr[1], qr[2]])
+circuit.cx(0, 1)
+circuit.append(SXGate().inverse().control(), [qr[1], qr[2]])
+circuit.cx(0, 1)
+circuit.append(SXGate().control(), [qr[0], qr[2]])
+
+circuit.draw(output='latex')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli1" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli1_hu4df9a9dfa3d28739cb72f787bee17960_6170_a02aa4dea1ef24d15d87566bd8ffdfd3.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli1_hu4df9a9dfa3d28739cb72f787bee17960_6170_d0ed55779803413e9f5eff327c7742c0.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli1_hu4df9a9dfa3d28739cb72f787bee17960_6170_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli1_hu4df9a9dfa3d28739cb72f787bee17960_6170_a02aa4dea1ef24d15d87566bd8ffdfd3.webp"
+               width="375"
+               height="117"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>This circuit corresponds to the Toffoli case $V = (1-i)(I+iX)/2$ presented in Figure 4.8 in Niels and Chuang. Furthermore, we can change the basis to Hadamard. Recall that $H\sqrt{X}H = \sqrt{Z} = S$. Thus we can write:</p>
+<pre><code>qr = QuantumRegister(3)
+circuit = QuantumCircuit(qr)
+
+circuit.h(2)
+circuit.append(SGate().control(), [qr[1], qr[2]])
+circuit.cx(0, 1)
+circuit.append(SGate().inverse().control(), [qr[1], qr[2]])
+circuit.cx(0, 1)
+circuit.append(SGate().control(), [qr[0], qr[2]])
+circuit.h(2)
+
+circuit.draw(output='latex')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli2" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli2_hub25ca1e49be51a9314e6e0338875c4c2_5429_6d2832a1fbe1b850e54fd27fbfafc7f1.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli2_hub25ca1e49be51a9314e6e0338875c4c2_5429_e37c0d98eb4588cd73e75d455caa22b2.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli2_hub25ca1e49be51a9314e6e0338875c4c2_5429_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli2_hub25ca1e49be51a9314e6e0338875c4c2_5429_6d2832a1fbe1b850e54fd27fbfafc7f1.webp"
+               width="409"
+               height="93"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>If one wants a more concrete visualization of the circuit, it is easy <a href="https://algassert.com/quirk#circuit=%7b%22cols%22:[[1,1,%22H%22],[1,%22%E2%80%A2%22,%22Z%5e%C2%BD%22],[%22%E2%80%A2%22,%22X%22],[1,%22%E2%80%A2%22,%22Z%5e-%C2%BD%22],[%22%E2%80%A2%22,%22X%22],[%22%E2%80%A2%22,1,%22Z%5e%C2%BD%22],[1,1,%22H%22]]%7d" target="_blank" rel="noopener">to construct it in Quirk</a> (which is, by the way, developed by Gidney) and check that it encodes the Toffoli gate. The circuit also encodes the MCX gate when considering the first wire is a bundle of multiple wires.</p>
+<p>But this construction does not fulfill the requirement of exercise 4.9 nor the competition description since the control bits are attached to the square root and $S$ gates which are not allowed. A careful reading of Niels and Chuang solves this problem. We can express the controlled-square root gates (also $S$ gates) above using the following decomposition presented in Figure 4.6 in Niels and Chuang. After all, this decomposition is quite well known and classical result. For an arbitrary unitary gate $U$, which is controlled by a single qubit, the decomposition is:</p>
+<pre><code class="language-python">qr = QuantumRegister(2)
+circuit = QuantumCircuit(qr)
+
+# This circuit is just for visualization and the identity 
+# gate is simply a place holder for the labels
+circuit.append(IGate(label = &quot;C&quot;), [qr[1]])
+circuit.cx(0, 1)
+circuit.append(IGate(label = &quot;B&quot;), [qr[1]])
+circuit.cx(0, 1)
+circuit.append(IGate(label = &quot;A&quot;), [qr[1]])
+circuit.append(IGate(label = &quot;Z(\\alpha)&quot;), [qr[0]])
+
+circuit.draw(output='latex')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli3" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli3_hua341c588fd6e8489f4bcceddc34a914d_5353_ac5e4d282a9b2a504784b6da7f5483b6.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli3_hua341c588fd6e8489f4bcceddc34a914d_5353_f195d6aa1d2c41ed378395e784156116.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli3_hua341c588fd6e8489f4bcceddc34a914d_5353_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli3_hua341c588fd6e8489f4bcceddc34a914d_5353_ac5e4d282a9b2a504784b6da7f5483b6.webp"
+               width="340"
+               height="69"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>where
+
+$$
+Z(\alpha) = \begin{bmatrix}
+1 & 0 \\
+0 & e^{i\alpha}
+\end{bmatrix}
+$$
+
+and $Z(\alpha)AXBXC = U$ and $ABC = I$.</p>
+<p>If we compare this construction to Figure 4.9 in Niels and Chuang, we can notice that $A = T$, $B = T^{\dagger}$, $C = I$ and $Z(\alpha) = T$. Now $ABC = TT^{\dagger} = I$ and $e^{(i\alpha)}AXBX = S$. So we can deduce that the following circuit implements the controlled $S$ gate:</p>
+<pre><code class="language-python">qr = QuantumRegister(2)
+circuit = QuantumCircuit(qr)
+
+# This circuit is just for visualization and the identity gate is a placeholder for the labels
+circuit.cx(0, 1)
+circuit.append(TGate().inverse(), [qr[1]])
+circuit.cx(0, 1)
+circuit.append(TGate(), [qr[1]])
+circuit.append(TGate(), [qr[0]])
+
+circuit.draw(output='latex')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli4" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli4_hu4d532ab64599fae00b3f836314b835c2_3719_a24bd475ef072704bf6732bc55cd0a8f.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli4_hu4d532ab64599fae00b3f836314b835c2_3719_c6b9562fe3909eb8a632010cfc042251.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli4_hu4d532ab64599fae00b3f836314b835c2_3719_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli4_hu4d532ab64599fae00b3f836314b835c2_3719_a24bd475ef072704bf6732bc55cd0a8f.webp"
+               width="273"
+               height="63"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>When we substitute the above decomposition into the circuit with controlled $S$ gates, we obtain:</p>
+<pre><code class="language-python">qr = QuantumRegister(3)
+circuit = QuantumCircuit(qr)
+
+circuit.h(2)
+
+# First substitution
+# circuit.append(SGate().control(), [qr[1], qr[2]])
+
+circuit.barrier()
+circuit.cx(1, 2)
+circuit.append(TGate().inverse(), [qr[2]])
+circuit.cx(1, 2)
+circuit.append(TGate(), [qr[2]])
+circuit.append(TGate(), [qr[1]])
+circuit.barrier()
+
+
+circuit.cx(0, 1)
+
+# Second substitution for inverse S
+# circuit.append(SGate().inverse().control(), [qr[1], qr[2]])
+
+circuit.barrier()
+circuit.append(TGate().inverse(), [qr[1]])
+circuit.append(TGate().inverse(), [qr[2]])
+circuit.cx(1, 2)
+circuit.append(TGate(), [qr[2]])
+circuit.cx(1, 2)
+circuit.barrier()
+
+circuit.cx(0, 1)
+
+# Third substitution
+#circuit.append(SGate().control(), [qr[0], qr[2]])
+
+circuit.barrier()
+circuit.cx(0, 2)
+circuit.append(TGate().inverse(), [qr[2]])
+circuit.cx(0, 2)
+circuit.append(TGate(), [qr[2]])
+circuit.append(TGate(), [qr[0]])
+circuit.barrier()
+
+circuit.h(2)
+
+circuit.draw(output='latex')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli5" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli5_hu97122eb899887095c0279f6687418f85_10604_dba79cb07f41b2d7ff52951b2f007666.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli5_hu97122eb899887095c0279f6687418f85_10604_825dceeab1579b515f7574698975986c.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli5_hu97122eb899887095c0279f6687418f85_10604_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli5_hu97122eb899887095c0279f6687418f85_10604_dba79cb07f41b2d7ff52951b2f007666.webp"
+               width="760"
+               height="91"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>which can be simplified to the following circuit:</p>
+<pre><code class="language-python">qr = QuantumRegister(3)
+circuit = QuantumCircuit(qr)
+
+circuit.h(2)
+
+circuit.cx(1, 2)
+circuit.append(TGate().inverse(), [qr[2]])
+circuit.cx(0, 2)
+circuit.append(TGate(), [qr[2]])
+
+circuit.cx(0, 1)
+circuit.cx(1, 2)
+circuit.cx(0, 2)
+
+circuit.append(TGate().inverse(), [qr[1]])
+circuit.append(TGate().inverse(), [qr[2]])
+circuit.cx(0, 2)
+circuit.cx(0, 1)
+
+circuit.append(TGate(), [qr[2]])
+circuit.append(TGate(), [qr[1]])
+circuit.append(TGate(), [qr[0]])
+
+circuit.h(2)
+
+circuit.draw(output='latex')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli6" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli6_hub6c2201bab54627c731c1474964dcb89_9189_7f8174f6636468e5f7f92ce9a288de9b.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli6_hub6c2201bab54627c731c1474964dcb89_9189_7d5dca4ee0f3cacfec14f9f6d8b89bf2.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli6_hub6c2201bab54627c731c1474964dcb89_9189_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli6_hub6c2201bab54627c731c1474964dcb89_9189_7f8174f6636468e5f7f92ce9a288de9b.webp"
+               width="589"
+               height="97"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>We see that the depth of this circuit (<a href="https://algassert.com/quirk#circuit=%7b%22cols%22:[[%22X%22,%22X%22,%22X%22],[1,1,%22H%22],[1,%22%E2%80%A2%22,%22X%22],[1,1,%22Z%5e-%C2%BC%22],[%22%E2%80%A2%22,1,%22X%22],[1,1,%22Z%5e%C2%BC%22],[%22%E2%80%A2%22,%22X%22],[1,%22%E2%80%A2%22,%22X%22],[%22%E2%80%A2%22,1,%22X%22],[1,%22Z%5e-%C2%BC%22,%22Z%5e-%C2%BC%22],[%22%E2%80%A2%22,1,%22X%22],[%22%E2%80%A2%22,%22X%22],[%22Z%5e%C2%BC%22,%22Z%5e%C2%BC%22,%22Z%5e%C2%BC%22],[1,1,%22H%22]]%7d" target="_blank" rel="noopener">see the circuit in Quirk</a>) is smaller than the one Niels and Chuang represented but not better than in the Classiq&rsquo;s problem description example. The circuit in the Classiq&rsquo;s problem description has a mistake: the fourth CNOT should be between $q_0$ and $q_2$ not between $q_1$ and $q_2$. The correct circuit is <a href="https://algassert.com/quirk#circuit=%7b%22cols%22:[[1,1,%22H%22],[1,%22%E2%80%A2%22,%22X%22],[1,1,%22Z%5e-%C2%BC%22],[%22%E2%80%A2%22,1,%22X%22],[1,1,%22Z%5e%C2%BC%22],[1,%22%E2%80%A2%22,%22X%22],[1,%22Z%5e%C2%BC%22,%22Z%5e-%C2%BC%22],[%22%E2%80%A2%22,1,%22X%22],[%22%E2%80%A2%22,%22X%22],[1,1,%22Z%5e%C2%BC%22],[1,%22Z%5e-%C2%BC%22],[%22Z%5e%C2%BC%22,1,%22H%22],[%22%E2%80%A2%22,%22X%22]]%7d" target="_blank" rel="noopener">here</a>. The number of gates is the same in all of the circuits.</p>
+<h3 id="iteratively-and-automatically-decompose-larger-mcx-gates">Iteratively and automatically decompose larger MCX gates</h3>
+<p>In this section, I code a program that iteratively decomposes MCX gates into the previously represented smaller circuits. The algorithm iteratively removes all the multi-control gates from the circuit expressed in the cell [3]. The circuit in the cell [3] does not draw these wires, but we consider that the first wire is a bundle of control wires. Pennylane supports badly renaming the qubit unitaries. In the following circuit, U gates differ from each other.</p>
+<pre><code class="language-python">n_ctrl = 14 #number of control qubits
+target = n_ctrl + 1
+dev = qml.device(&quot;default.qubit&quot;, wires=target)
+
+def get_square_root_z(n):
+    return np.array([[1, 0], [0, np.exp(1j*np.pi/n)]])
+    
+@qml.qnode(dev)
+def multi_Toffoli_step1_circuit(n_control_wires):
+    all_ctrl_wires = range(n_control_wires + 1)
+    target = n_control_wires + 1
+    nth_square_root = target - n_control_wires
+    square_root_matrix = None
+    
+    qml.Hadamard(wires=target)
+    for i in all_ctrl_wires[:-1]:
+        ctrl_wires = all_ctrl_wires[:-i - 1]
+        n_ctrl_wires = len(ctrl_wires)
+        square_root_matrix = get_square_root_z(2**i)
+        square_root_matrix_inv = np.linalg.inv(square_root_matrix)
+        
+        qml.MultiControlledX(control_wires = ctrl_wires, wires = n_ctrl_wires)
+        qml.ControlledQubitUnitary(square_root_matrix_inv, control_wires = n_ctrl_wires, wires = target)
+        qml.MultiControlledX(control_wires = ctrl_wires, wires = n_ctrl_wires)
+        qml.ControlledQubitUnitary(square_root_matrix, control_wires = n_ctrl_wires, wires = target)
+    
+    qml.ControlledQubitUnitary(square_root_matrix, control_wires = 0, wires = target)
+    qml.Hadamard(wires=target)
+    return qml.state()
+
+qml.drawer.use_style('black_white')
+fig, ax = qml.draw_mpl(multi_Toffoli_step1_circuit, show_all_wires = True)(n_ctrl)
+fig.set_size_inches(fig.get_size_inches()[0]*0.3, fig.get_size_inches()[1]*0.3)
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli7" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli7_hu13f216dc70c45da7fdec702a13d2ccd7_45137_5da6882b2c2f7986a43348f3cb5597f3.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli7_hu13f216dc70c45da7fdec702a13d2ccd7_45137_a1f8f8a1d009004c58e4f364460d4746.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli7_hu13f216dc70c45da7fdec702a13d2ccd7_45137_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli7_hu13f216dc70c45da7fdec702a13d2ccd7_45137_5da6882b2c2f7986a43348f3cb5597f3.webp"
+               width="760"
+               height="276"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Next, we decompose the controlled U gates. Here we apply the rule from the cell [5]. Again, the cell [5] shows only the first step of the iteration. We implement the step by decomposing <code>qml.ControlledQubitUnitary</code> in the above code. We can draw the circuit in a less pretty but more informative format to see that the controlled U gates are composed correctly.</p>
+<pre><code class="language-python">def controlled_qubit_unitary_decomposed(exponent, n_ctrl_wires, target, adjoint = False):
+    square_root_matrix = get_square_root_z(2**exponent)
+    square_root_matrix_inv = np.linalg.inv(square_root_matrix)
+    
+    if adjoint:
+        qml.QubitUnitary(square_root_matrix_inv, wires = n_ctrl_wires)
+        qml.QubitUnitary(square_root_matrix_inv, wires = target)
+        qml.CNOT(wires = [n_ctrl_wires, target])
+        qml.QubitUnitary(square_root_matrix, wires = target)
+        qml.CNOT(wires = [n_ctrl_wires, target])
+    else:
+        qml.CNOT(wires = [n_ctrl_wires, target])
+        qml.QubitUnitary(square_root_matrix_inv, wires = target)
+        qml.CNOT(wires = [n_ctrl_wires, target])
+        qml.QubitUnitary(square_root_matrix, wires = target)
+        qml.QubitUnitary(square_root_matrix, wires = n_ctrl_wires) 
+</code></pre>
+<pre><code class="language-python">@qml.qnode(dev)
+def multi_Toffoli_step2_circuit(n_control_wires):
+    all_ctrl_wires = range(n_control_wires + 1)
+    target = n_control_wires + 1
+    nth_square_root = target - n_control_wires
+    square_root_matrix = None
+    
+    qml.Hadamard(wires=target)
+    for i in all_ctrl_wires[:-1]:
+        ctrl_wires = all_ctrl_wires[:-i - 1]
+        n_ctrl_wires = len(ctrl_wires)
+        square_root_matrix = get_square_root_z(2**i)
+        
+        #qml.Barrier(wires = range(target + 1))
+        qml.MultiControlledX(control_wires = ctrl_wires, wires = n_ctrl_wires)
+        controlled_qubit_unitary_decomposed(i+1, n_ctrl_wires, target, adjoint = True)
+        qml.MultiControlledX(control_wires = ctrl_wires, wires = n_ctrl_wires)
+        controlled_qubit_unitary_decomposed(i+1, n_ctrl_wires, target, adjoint = False)
+        
+    #qml.Barrier(wires = range(target +1))
+    controlled_qubit_unitary_decomposed(len(all_ctrl_wires[:-1]), 0, target, adjoint = False)
+    qml.Hadamard(wires=target)
+    return qml.state()
+
+# One can also visualize the code with matplotlib, but then the QubitUnatires won't show correctly
+# because I was not able to overwrite the default name 'U'
+# There might be a fix for this visualization problem
+
+#qml.drawer.use_style('black_white')
+#fig, ax = qml.drawer.draw_mpl(multi_Toffoli_step2_circuit, show_all_wires = True, show_matrices=True)(n_ctrl)
+#fig.set_size_inches(fig.get_size_inches()[0]*0.4, fig.get_size_inches()[1]*0.4)
+
+print(qml.drawer.draw(multi_Toffoli_step2_circuit, show_all_wires=True, decimals=5, max_length=250, show_matrices=True)(n_ctrl))
+</code></pre>
+<p>Finally, we decompose other MCX gates. Note that this step removed one control qubit, and we still have an MCX gate with 13 control qubits. At each step, the number of required control qubits is reduced by one. This means we recursively execute the above code for each <code>qml.MultiControlledX</code>. As one can expect, the output circuit is long, but it does not use any ancilla qubits.</p>
+<pre><code class="language-python">def multi_Toffoli_step3_circuit(n_control_wires):
+    all_ctrl_wires = range(n_control_wires + 1)
+    target = n_control_wires + 1
+    nth_square_root = target - n_control_wires
+    square_root_matrix = None
+    
+    qml.Hadamard(wires=target)
+    for i in all_ctrl_wires[:-1]:
+        ctrl_wires = all_ctrl_wires[:-i - 1]
+        n_ctrl_wires = len(ctrl_wires)
+        square_root_matrix = get_square_root_z(2**i)
+        
+        #qml.Barrier(wires = range(target + 1))
+        multi_Toffoli_step3_circuit(n_ctrl_wires - 1)
+        controlled_qubit_unitary_decomposed(i+1, n_ctrl_wires, target, adjoint = True)
+        multi_Toffoli_step3_circuit(n_ctrl_wires - 1)
+        controlled_qubit_unitary_decomposed(i+1, n_ctrl_wires, target, adjoint = False)
+        
+    #qml.Barrier(wires = range(target +1))
+    controlled_qubit_unitary_decomposed(len(all_ctrl_wires[:-1]), 0, target, adjoint = False)
+    qml.Hadamard(wires=target)
+</code></pre>
+<p>The 14-control qubit MCX gate produces such a large circuit that I could not even construct it, so I demonstrate the code with 5-control qubits (which is very long also!).</p>
+<pre><code class="language-python">@qml.qnode(dev)
+def multi_Toffoli_final(n_control_wires):
+    multi_Toffoli_step3_circuit(n_control_wires)
+    return qml.state()
+
+n_ctrl = 5
+print(qml.drawer.draw(multi_Toffoli_final, show_all_wires=False, decimals=5, max_length=250, show_matrices=True)(n_ctrl))
+</code></pre>
+<p>Even if the circuit is unpractically long to be visualized, we can easily calculate its depth and gate count with Pennylane. The framework also offers other possibly interesting information about the circuit.</p>
+<pre><code class="language-python"># Also command multi_Toffoli_final.qtape.get_depth() might be useful
+n_ctrl = 7
+print(&quot;The specs of &quot; + str(n_ctrl) + &quot; control qubits Toffoli gate without ancilla qubits is: &quot;)
+print(json.dumps(qml.specs(multi_Toffoli_final)(n_ctrl), indent=4, sort_keys=True))
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">The specs of 7 control qubits Toffoli gate without ancilla qubits is: 
+{
+    &quot;depth&quot;: 17012,
+    &quot;device_name&quot;: &quot;default.qubit.autograd&quot;,
+    &quot;diff_method&quot;: &quot;best&quot;,
+    &quot;expansion_strategy&quot;: &quot;gradient&quot;,
+    &quot;gate_sizes&quot;: {
+        &quot;1&quot;: 17493,
+        &quot;2&quot;: 8746
+    },
+    &quot;gate_types&quot;: {
+        &quot;CNOT&quot;: 8746,
+        &quot;Hadamard&quot;: 4374,
+        &quot;QubitUnitary&quot;: 13119
+    },
+    &quot;gradient_fn&quot;: &quot;backprop&quot;,
+    &quot;gradient_options&quot;: {},
+    &quot;interface&quot;: &quot;autograd&quot;,
+    &quot;num_device_wires&quot;: 15,
+    &quot;num_diagonalizing_gates&quot;: 0,
+    &quot;num_observables&quot;: 1,
+    &quot;num_operations&quot;: 26239,
+    &quot;num_trainable_params&quot;: 13119,
+    &quot;num_used_wires&quot;: 9
+}
+</code></pre>
+<p>This exercise shows how important ancilla qubits are. In some sense, they can store lots of information during quantum computations. I did not study this deeper, but it seemed that the circuit depth without ancilla qubits is growing fast, possibly exponentially.</p>
+<h2 id="section-2-solution-proposal-with-ancilla-qubits">Section 2: Solution proposal with ancilla qubits</h2>
+<p>If one studies the 14-control qubit MCX gate a bit, we can easily see that we can decompose it in the following manner. Also, the <a href="https://algassert.com/circuits/2015/06/22/Using-Quantum-Gates-instead-of-Ancilla-Bits.html" target="_blank" rel="noopener">blog post</a> by Craig Gidney points out this. See the <a href="https://algassert.com/quirk#circuit=%7b%22cols%22:[[%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,%22X%22],[1,1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,%22%E2%80%A2%22,%22%E2%80%A2%22,%22X%22,%22%E2%80%A2%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,%22X%22]]%7d" target="_blank" rel="noopener">Quirk demonstration</a> for 8 control-qubit Toffoli. The idea is that every ancilla qubit divides the construction into two MCX gates with half the number of the qubits as the original MCX gate.</p>
+<pre><code class="language-python">qr = QuantumRegister(14, 'ctrl')
+target = QuantumRegister(1, 'target')
+anc = QuantumRegister(1, 'ancilla')
+circuit = QuantumCircuit(qr, target, anc)
+
+gate7 = MCXGate(7)
+gate8 = MCXGate(8)
+
+controls7 = [qr[i] for i in range(7)]
+controls8 = [qr[i] for i in range(7, 14)]
+
+circuit.append(gate7, controls7 + [anc[0]])
+circuit.append(gate8, controls8 + [anc[0], target[0]])
+circuit.append(gate7, controls7 + [anc[0]])
+
+circuit.draw(output='latex')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli8" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli8_huaca94def83fee83b0901f79dffa955e2_12316_2450c739a46fd8bebace91606324133c.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli8_huaca94def83fee83b0901f79dffa955e2_12316_d01e2b128271ac9a59e1965861041515.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli8_huaca94def83fee83b0901f79dffa955e2_12316_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli8_huaca94def83fee83b0901f79dffa955e2_12316_2450c739a46fd8bebace91606324133c.webp"
+               width="240"
+               height="359"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>See the <a href="https://algassert.com/quirk#circuit=%7b%22cols%22:[[%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22,%22X%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,1,1,1,%22%E2%80%A2%22,1,1,1,1,1,1,1,%22X%22,%22%E2%80%A2%22],[1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,%22X%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,1,1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,%22X%22],[1,1,1,1,1,1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,%22X%22],[1,1,1,1,1,1,1,1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,%22X%22],[1,1,1,1,1,1,1,1,1,1,1,1,%22X%22,%22%E2%80%A2%22],[1,1,1,1,1,1,1,1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,%22X%22],[1,1,1,1,1,1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,%22X%22],[1,1,1,1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,%22X%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,1,1,1,%22%E2%80%A2%22,1,1,1,1,1,1,1,%22X%22,%22%E2%80%A2%22],[1,1,1,%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,%22X%22],[%22%E2%80%A2%22,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,1,1,%22X%22],[1,1,%22%E2%80%A2%22,1,1,1,1,1,1,1,1,1,1,1,%22X%22]]%7d" target="_blank" rel="noopener">Quirk example for 12-qubit case</a> when we use three ancilla qubits and Toffoli gates. Toffoli gates can be decomposed using the previous decompositions. Let&rsquo;s code the above example with Pennylane:</p>
+<pre><code class="language-python">import math
+n_ctrl = 14 # number of control qubits
+target = n_ctrl + 1
+dev = qml.device(&quot;default.qubit&quot;, wires=target)
+
+@qml.qnode(dev)
+def make_it_half(n_ctrl):
+    target = n_ctrl
+    ctrl_wires1 = list(range(math.ceil(n_ctrl/2)))
+    ctrl_wires2 = list(range(math.floor(n_ctrl/2), n_ctrl)) + [target + 1]
+    
+    qml.MultiControlledX(control_wires = ctrl_wires1, wires = target + 1)
+    qml.MultiControlledX(control_wires = ctrl_wires2, wires = target)
+    qml.MultiControlledX(control_wires = ctrl_wires1, wires = target + 1)
+    
+    return qml.state()
+
+qml.drawer.use_style('black_white')
+fig, ax = qml.draw_mpl(make_it_half, wire_order=list(range(target)), show_all_wires = True)(n_ctrl)
+fig.set_size_inches(fig.get_size_inches()[0]*0.3, fig.get_size_inches()[1]*0.3)
+</code></pre>
+<p>Next, we recursively replace <code>MultiControlledX</code> until we have expressed everything in terms of Toffoli-gates:</p>
+<pre><code class="language-python">dev = qml.device(&quot;default.qubit&quot;, wires=20)    
+
+def make_it_half_recursive(ctrl_wires, target):
+    n_ctrl = len(ctrl_wires)
+    ctrl_indices1 = math.ceil(n_ctrl/2)
+    
+    if n_ctrl == 1:
+        qml.Toffoli(wires = [ctrl_wires[0], target + 1, target])
+    elif n_ctrl == 2:
+        qml.Toffoli(wires = [ctrl_wires[0], ctrl_wires[1], target])
+    else:
+        new_target = max(max(ctrl_wires), target)
+        make_it_half_recursive(ctrl_wires[:ctrl_indices1], new_target + 1)
+        make_it_half_recursive(ctrl_wires[ctrl_indices1:] + [new_target + 1], target)
+        make_it_half_recursive(ctrl_wires[:ctrl_indices1], new_target + 1)
+
+@qml.qnode(dev)
+def full_algorithm(ctrl_wires, target):
+    make_it_half_recursive(ctrl_wires, target)
+    return qml.state()
+
+qml.drawer.use_style('black_white')
+x = 14
+fig, ax = qml.draw_mpl(full_algorithm, wire_order=list(range(20)), show_all_wires = False)(list(range(x)), x)
+fig.set_size_inches(fig.get_size_inches()[0]*0.4, fig.get_size_inches()[1]*0.4)
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli9" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli9_hu6458cac32fa10a7450d2434e158298fe_50658_13b2ea61b2bab64e7b593e3de7de2df7.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli9_hu6458cac32fa10a7450d2434e158298fe_50658_c75771160f4b841341451156a6c6bf27.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli9_hu6458cac32fa10a7450d2434e158298fe_50658_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli9_hu6458cac32fa10a7450d2434e158298fe_50658_13b2ea61b2bab64e7b593e3de7de2df7.webp"
+               width="760"
+               height="296"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<pre><code class="language-python">print(&quot;The specs of 14 control qubits MCX gate with ancilla qubits is: &quot;)
+print(json.dumps(qml.specs(full_algorithm)(list(range(14)), 14), indent=4, sort_keys=True))
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">The specs of 14 control qubits MCX gate with ancilla qubits is: 
+{
+    &quot;depth&quot;: 33,
+    &quot;device_name&quot;: &quot;default.qubit.autograd&quot;,
+    &quot;diff_method&quot;: &quot;best&quot;,
+    &quot;expansion_strategy&quot;: &quot;gradient&quot;,
+    &quot;gate_sizes&quot;: {
+        &quot;3&quot;: 49
+    },
+    &quot;gate_types&quot;: {
+        &quot;Toffoli&quot;: 49
+    },
+    &quot;gradient_fn&quot;: &quot;backprop&quot;,
+    &quot;gradient_options&quot;: {},
+    &quot;interface&quot;: &quot;autograd&quot;,
+    &quot;num_device_wires&quot;: 20,
+    &quot;num_diagonalizing_gates&quot;: 0,
+    &quot;num_observables&quot;: 1,
+    &quot;num_operations&quot;: 49,
+    &quot;num_trainable_params&quot;: 0,
+    &quot;num_used_wires&quot;: 19
+}
+</code></pre>
+<p>Next, we replace Toffoli-gates with the decomposition from the cell [6]:</p>
+<pre><code class="language-python">def toffoli_decomposition(ctrl1, ctrl2, target):
+    qml.Hadamard(wires = target)
+    qml.CNOT(wires = [ctrl2, target])
+    qml.adjoint(qml.T)(wires = target)
+    qml.CNOT(wires=[ctrl1, target])
+    qml.CNOT(wires=[ctrl1, ctrl2])
+    qml.T(wires = target)
+    qml.CNOT(wires=[ctrl2, target])
+    qml.CNOT(wires=[ctrl1, target])
+    qml.adjoint(qml.T)(wires = target)
+    qml.adjoint(qml.T)(wires = ctrl2)
+    qml.CNOT(wires=[ctrl1, target])
+    qml.CNOT(wires=[ctrl1, ctrl2])
+    qml.T(wires = target)
+    qml.T(wires = ctrl1)
+    qml.T(wires = ctrl2)
+    qml.Hadamard(wires = target)
+</code></pre>
+<pre><code class="language-python">dev = qml.device(&quot;default.qubit&quot;, wires=19)
+#dev = qml.device(&quot;qiskit.aer&quot;, wires=19)
+
+def make_it_half_recursive_with_Toffoli_decomposition(ctrl_wires, target):
+    n_ctrl = len(ctrl_wires)
+    ctrl_indices1 = math.ceil(n_ctrl/2)
+    
+    if n_ctrl == 1:
+        toffoli_decomposition(ctrl_wires[0], target + 1, target)
+    elif n_ctrl == 2:
+        toffoli_decomposition(ctrl_wires[0], ctrl_wires[1], target)
+    else:
+        new_target = max(max(ctrl_wires), target)
+        make_it_half_recursive_with_Toffoli_decomposition(ctrl_wires[:ctrl_indices1], new_target + 1)
+        make_it_half_recursive_with_Toffoli_decomposition(ctrl_wires[ctrl_indices1:] + [new_target + 1], target)
+        make_it_half_recursive_with_Toffoli_decomposition(ctrl_wires[:ctrl_indices1], new_target + 1)
+
+@qml.qnode(dev)
+def final_full_algorithm(ctrl_wires, target):
+    make_it_half_recursive_with_Toffoli_decomposition(ctrl_wires, target)
+    return qml.expval(qml.PauliZ(0)) # We measure this because otherwise, the Qiskit plugin does not create correct OpenQASM
+
+fig, ax = qml.draw_mpl(final_full_algorithm, wire_order=list(range(20)), show_all_wires = False)(list(range(14)), 14)
+#fig.set_size_inches(fig.get_size_inches()[0]*0.4, fig.get_size_inches()[1]*0.4)
+fig.savefig('final_circuit')
+</code></pre>
+<p>Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli10" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli10_hu6cbdb6dbc70657fda7da5140b1464a7e_503204_5c72d3c8c22abb27708cf56b7af53866.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli10_hu6cbdb6dbc70657fda7da5140b1464a7e_503204_1b7175d4a12a82d35ff4c92884f8cf6e.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli10_hu6cbdb6dbc70657fda7da5140b1464a7e_503204_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli10_hu6cbdb6dbc70657fda7da5140b1464a7e_503204_5c72d3c8c22abb27708cf56b7af53866.webp"
+               width="760"
+               height="30"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>To see the circuit correctly, see the final_circuit.png file. For some reason, the drawer gets lazy, and the end of the circuit is not precisely visible. Anyway, there are other options to draw it if necessary.</p>
+<pre><code class="language-python">print(&quot;The specs of 14 control qubits Toffoli gate with four ancilla qubits is: &quot;)
+print(json.dumps(qml.specs(final_full_algorithm)(list(range(14)), 14), indent=4, sort_keys=True))
+
+
+# The following code generates OpenQASM for the circuit
+# In this case, you need to run the circuit on qiskit.awr device since
+# Pennylane does not support circuit conversion to OpenQASM
+
+#final_full_algorithm(list(range(14)), 14)
+#qasm_circuit = dev._circuit.qasm(formatted  = True, filename = 'toffoli_qasm')
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">The specs of 14 control qubits Toffoli gate with four ancilla qubits is: 
+{
+    &quot;depth&quot;: 352,
+    &quot;device_name&quot;: &quot;default.qubit.autograd&quot;,
+    &quot;diff_method&quot;: &quot;best&quot;,
+    &quot;expansion_strategy&quot;: &quot;gradient&quot;,
+    &quot;gate_sizes&quot;: {
+        &quot;1&quot;: 441,
+        &quot;2&quot;: 343
+    },
+    &quot;gate_types&quot;: {
+        &quot;CNOT&quot;: 343,
+        &quot;Hadamard&quot;: 98,
+        &quot;T&quot;: 196,
+        &quot;T.inv&quot;: 147
+    },
+    &quot;gradient_fn&quot;: &quot;backprop&quot;,
+    &quot;gradient_options&quot;: {},
+    &quot;interface&quot;: &quot;autograd&quot;,
+    &quot;num_device_wires&quot;: 19,
+    &quot;num_diagonalizing_gates&quot;: 0,
+    &quot;num_observables&quot;: 1,
+    &quot;num_operations&quot;: 784,
+    &quot;num_trainable_params&quot;: 0,
+    &quot;num_used_wires&quot;: 19
+}
+</code></pre>
+<h3 id="testing-14-qubits-mcx-gate-with-ancilla-qubits">Testing 14 qubits MCX gate with ancilla qubits</h3>
+<p>We test the code so that we create Hadamard transform over the 14 control qubits. We know that only one state (one containing 14 times $|1\rangle$) among $2^{14}$ produces output 1 when the target qubit is measured. This means that we should measure 1 from the target qubit with the probability $\frac{1}{2^{14}} = 1/16384 = 0.000061035... \approx 6.1035\times 10^{-5}$. Any mistake in the code will affect this probability.</p>
+<pre><code class="language-python">dev = qml.device(&quot;lightning.qubit&quot;, wires=19)
+
+@qml.qnode(dev)
+def test_code(n):
+    ctrl_wires, target = list(range(n)), n
+    qml.broadcast(unitary=qml.Hadamard, pattern=&quot;single&quot;, wires=ctrl_wires)
+    #qml.broadcast(unitary=qml.PauliX, pattern=&quot;single&quot;, wires=ctrl_wires)
+    make_it_half_recursive_with_Toffoli_decomposition(ctrl_wires, target)
+    return qml.probs(wires=[target])
+
+print(test_code(14))
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">[9.99938965e-01 6.10351563e-05]
+</code></pre>
+<p>As we see, the output probability of measuring 1 is close to <code>6.1035e-05</code>. This indicates that the decomposition is correct.</p>
+<h2 id="section-3-variational-classifier-eg-is-it-necessary-to-be-always-right">Section 3: Variational classifier, e.g., is it necessary to be always right?</h2>
+<p>I think this exercise would be suitable and sufficiently simple for variational classifiers. So I modified the exercise to develop a parametrized quantum circuit optimized to simulate the MCX gate. It produces a correct value to the target qubit with a certain probability. The original idea of the variational classifier is demonstrated in <a href="https://pennylane.ai/qml/demos/tutorial_variational_classifier.html" target="_blank" rel="noopener">Pennylane&rsquo;s demonstration</a>, which is inspired by papers <a href="https://arxiv.org/abs/1802.06002" target="_blank" rel="noopener">Classification with Quantum Neural Networks on Near Term Processors</a> and <a href="https://arxiv.org/abs/1804.00633" target="_blank" rel="noopener">Circuit-centric quantum classifiers</a>. Now the gate depth and gate count depend on our ansatz.</p>
+<p>We can actually follow the outline of the demonstration. The demonstration implements a variational classifier for the parity function, but in our case, the function is quite simple too:
+
+$$f \colon \left\{0,1 \right\}^{14} \to \left\{0,1 \right\}, \text{ where } f(x) = \begin{cases} 1 \text{ if } x_i = 1 \text{ for all } i = 1, \ldots 14 \\
+0 \text{ otherwise}\end{cases}$$
+
+There is plenty of data around now since we know precisely how MCX is supposed to work!</p>
+<p>I do not think I have the time and resources to train the model for 14 qubits MCX gate, so I demonstrate the problem with three control qubits and one target qubit.</p>
+<pre><code class="language-python">from pennylane.optimize import AdamOptimizer
+
+n_ctrl = 4
+qubits = n_ctrl
+dev = qml.device(&quot;default.qubit&quot;, wires=qubits)
+
+def layer(W):
+    for i in range(qubits - 1):
+        qml.CRot(W[i, 0], W[i, 1], W[i, 2], wires = [i, qubits - 1])
+</code></pre>
+<p>The following circuit implements the ansatz for this quantum machine learning task. Some other sophisticated guesses might work better and have a shorter depth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="toffoli11" srcset="
+               /post/classiq_coding_competition_toffoli/toffoli11_hu12db9c5bcb59b6bc5117ad41fc80d512_18013_84b298e44ad60240e994b35604b5f043.webp 400w,
+               /post/classiq_coding_competition_toffoli/toffoli11_hu12db9c5bcb59b6bc5117ad41fc80d512_18013_faa44c7e0c71963c589056c5c86f1ef7.webp 760w,
+               /post/classiq_coding_competition_toffoli/toffoli11_hu12db9c5bcb59b6bc5117ad41fc80d512_18013_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/classiq_coding_competition_toffoli/toffoli11_hu12db9c5bcb59b6bc5117ad41fc80d512_18013_84b298e44ad60240e994b35604b5f043.webp"
+               width="760"
+               height="115"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<pre><code class="language-python">@qml.qnode(dev)
+def MCToffoli(weights, x):
+    
+    qml.BasisState(x, wires=range(qubits - 1))
+
+    for W in weights:
+        layer(W)
+
+    return qml.expval(qml.PauliZ(qubits - 1))
+</code></pre>
+<pre><code class="language-python">def variational_classifier(weights, bias, x):
+    return MCToffoli(weights, x) #+ bias
+
+def square_loss(labels, predictions):
+    loss = 0
+    for l, p in zip(labels, predictions):
+        #print('Label ', l, ' prediction ', p)
+        loss = loss + (l - p) ** 2
+
+    loss = loss / len(labels)
+    return loss
+
+
+def accuracy(labels, predictions):
+    loss = 0
+    for l, p in zip(labels, predictions):
+        if abs(l - p) &lt; 1e-5:
+            loss = loss + 1
+    loss = loss / len(labels)
+
+    return loss
+
+
+def cost(weights, bias, X, Y):
+    predictions = [variational_classifier(weights, bias, x) for x in X]
+    return square_loss(Y, predictions)
+</code></pre>
+<p>The following code generates the training data. Since we know how the function works, we can easily generate as much data as we need:</p>
+<pre><code class="language-python">from itertools import combinations
+b_strings = []
+
+def genbin(n, bs = []):
+    if n-1:
+        genbin(n-1, bs + [0])
+        genbin(n-1, bs + [1])
+    else:
+        b_strings.append([1] + bs)
+        b_strings.append([0] + bs)
+
+def generate_data(n_items, qubits):
+    result = [1 for i in range(qubits-1)]
+    Y = [0]
+    X = [result]
+    
+    genbin(qubits-1)
+    
+    for string in b_strings:
+        if not all(string):
+            X.append(string)
+            Y.append(1)
+        
+    return np.array(X, requires_grad=False), np.array(Y, requires_grad=False)
+</code></pre>
+<pre><code class="language-python">n_items = 2^qubits
+X, Y = generate_data(n_items, qubits)
+Y = Y * 2 - np.ones(len(Y))  # shift label from {0, 1} to {-1, 1}
+
+print(&quot;Example of generated data: &quot;)
+for i in range(5):
+    print(&quot;X = {}, Y = {: d}&quot;.format(X[i], int(Y[i])))
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">Example of generated data: 
+X = [1 1 1], Y = -1
+X = [1 0 0], Y =  1
+X = [0 0 0], Y =  1
+X = [1 0 1], Y =  1
+X = [0 0 1], Y =  1
+</code></pre>
+<p>Training process:</p>
+<pre><code class="language-python">np.random.seed(0)
+num_qubits = qubits
+num_layers = 10
+weights_init = 0.01 * np.random.randn(num_layers, num_qubits, 3, requires_grad=True)
+bias_init = np.array(0.0, requires_grad=True)
+
+opt = AdamOptimizer()
+batch_size = 5
+weights = weights_init
+bias = bias_init
+for it in range(100):
+
+    # Update the weights by one optimizer step
+    batch_index = np.random.randint(0, len(X), (batch_size,))
+    X_batch = X[batch_index]
+    Y_batch = Y[batch_index]
+    weights, bias, _, _ = opt.step(cost, weights, bias, X_batch, Y_batch)
+
+    # Compute accuracy
+    predictions = [np.sign(variational_classifier(weights, bias, x)) for x in X]
+    acc = accuracy(Y, predictions)
+
+    print(
+        &quot;Iter: {:5d} | Cost: {:0.7f} | Accuracy: {:0.7f} &quot;.format(
+            it + 1, cost(weights, bias, X, Y), acc
+        )
+    )
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">Iter:     1 | Cost: 0.4599114 | Accuracy: 0.8750000 
+Iter:     2 | Cost: 0.4238353 | Accuracy: 0.8750000 
+Iter:     3 | Cost: 0.3598879 | Accuracy: 0.8750000 
+Iter:     4 | Cost: 0.3144206 | Accuracy: 0.8750000 
+Iter:     5 | Cost: 0.2946587 | Accuracy: 0.8750000 
+Iter:     6 | Cost: 0.2882779 | Accuracy: 0.8750000 
+Iter:     7 | Cost: 0.2879778 | Accuracy: 0.8750000 
+Iter:     8 | Cost: 0.2991846 | Accuracy: 0.8750000 
+Iter:     9 | Cost: 0.3251705 | Accuracy: 0.8750000 
+Iter:    10 | Cost: 0.3131737 | Accuracy: 0.8750000 
+...
+Iter:    98 | Cost: 0.0158998 | Accuracy: 1.0000000 
+Iter:    99 | Cost: 0.0157305 | Accuracy: 1.0000000 
+Iter:   100 | Cost: 0.0155114 | Accuracy: 1.0000000
+</code></pre>
+<p>We create the same circuit as we used in the model except that we measure the target qubit</p>
+<pre><code class="language-python">@qml.qnode(dev)
+def MCToffoli2(weights, x):
+    
+    qml.BasisState(x, wires=range(qubits - 1))
+
+    for W in weights:
+        layer(W)
+
+    return qml.probs(wires=qubits - 1)
+</code></pre>
+<p>If any of the three control qubits is 0, we measure 0 with high probability:</p>
+<pre><code class="language-python">x = np.array([0,0,0])
+print(MCToffoli2(weights, x))
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">[1. 0.]
+</code></pre>
+<p>If all three control qubits are 1, we measure 1 with high probability:</p>
+<pre><code class="language-python">x = np.array([1,1,1])
+print(MCToffoli2(weights, x))
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-python">[0.09396188 0.90603812]
+</code></pre>
+<h2 id="conclusion-and-lessons-to-learn">Conclusion and lessons to learn</h2>
+<p>Although these decompositions did not contain very many T-gates, there is <a href="https://arxiv.org/abs/1903.10477" target="_blank" rel="noopener">interesting research</a> studying T-count reduction with <a href="https://zxcalculus.com/" target="_blank" rel="noopener">ZX-calculus</a>.</p>
+<p>The most interesting lesson I learned was the remarkable effect of ancilla qubits. Of course, I knew that many decompositions require ancilla qubits. Still, I have never had first-hand experience in recognizing the actual difference in circuit depth in cases we do not use ancilla qubits vs. we use them.</p>
+<p>Secondly, the quantum machine learning approach seems an exciting option, and in my opinion, it demonstrates how well ML and quantum computing fit together. In the near future, we will see a lot of quantum machine learning applications.</p>
+<p>The gate count in these solutions was not sufficiently good if you compare them to the winning solutions. I am happy that Classiq considered the first decompositions as valid solutions to the problem (the ML approach was not valid since the output was not exactly correct).</p>
+<h2 id="resources">Resources</h2>
+<p><a href="https://github.com/valterUo/classiq-coding-competition/blob/main/toffoli.ipynb" target="_blank" rel="noopener">Jupyter notebook</a> contains the code in this blog post.</p>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/quantum-computing/">quantum computing</a>
+  
+  <a class="badge badge-light" href="/tag/cnot-decomposition/">CNOT decomposition</a>
+  
+  <a class="badge badge-light" href="/tag/circuit-rewriting/">circuit rewriting</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://valteruo.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu3d65f39a05511862afdcdca30adef897_126457_270x270_fill_q75_lanczos_center.jpg" alt="Valter Uotila"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://valteruo.github.io/">Valter Uotila</a></h5>
+      <h6 class="card-subtitle">Doctoral researcher in computer science (he/him)</h6>
+      <p class="card-text">My research interests include quantum computing, quantum information and data management.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://researchportal.helsinki.fi/fi/persons/valter-johan-edvard-uotila" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/valterUo" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/valter-uotila/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-8201-397X" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.zotero.org/valteruo" target="_blank" rel="noopener">
+        <i class="ai ai-zotero"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://arxiv.org/search/?searchtype=author&amp;query=Uotila%2C&#43;V" target="_blank" rel="noopener">
+        <i class="ai ai-arxiv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Valter Uotila. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.0047d4febf356e7f0b988e541f50b065.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.1e88f36893cf08d9754e856e96143944.js"></script>
+
+    
+    
+      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.b0d291ed6d27eacec233e6cf5204f99a.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

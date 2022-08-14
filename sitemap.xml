@@ -4,9 +4,33 @@
   
   
   <url>
-    <loc></loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc></loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://valteruo.github.io/categories/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://valteruo.github.io/categories/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/category/classiq-coding-competition/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/category/constrained-optimization/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/grover-algorithm/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/kakuro-puzzle/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/post/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/quantum-computing/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/post/classiq_coding_competition_kakuro/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tags/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/circuit-rewriting/</loc><lastmod>2022-06-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/cnot-decomposition/</loc><lastmod>2022-06-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/post/classiq_coding_competition_toffoli/</loc><lastmod>2022-06-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://valteruo.github.io/tag/diagrammatic-reasoning/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -14,15 +38,7 @@
   <url>
     <loc>https://valteruo.github.io/tag/multi-model-databases/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://valteruo.github.io/post/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://valteruo.github.io/tag/quantum-computing/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://valteruo.github.io/post/initial-post/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://valteruo.github.io/tags/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://valteruo.github.io/</loc><lastmod>2022-04-18T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc></loc><lastmod>2022-04-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -100,4 +116,8 @@
   <url>
     <loc>https://valteruo.github.io/publication/seadata21/</loc><lastmod>2021-08-20T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://valteruo.github.io/tag/visionary/</loc><lastmod>2021-08-20T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://valteruo.github.io/tag/visionary/</loc><lastmod>2021-08-20T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/privacy/</loc><lastmod>2018-06-28T00:00:00+01:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/terms/</loc><lastmod>2018-06-28T00:00:00+01:00</lastmod><changefreq>weekly</changefreq></url></urlset>
