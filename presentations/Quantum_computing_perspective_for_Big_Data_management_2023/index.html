@@ -1,0 +1,669 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Quantum computing perspective for Big Data management</title>
+
+	<meta name="description"
+		content="Introduction to quantum computing and quantum information processing for big data management">
+	<meta name="author" content="Valter Uotila">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/serif.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3>Quantum computing perspective for (Big) Data management</h3>
+				<p>
+					<small>Valter Uotila</small>
+				</p>
+				<p>
+					<small>January 30, 2023</small>
+				</p>
+			</section>
+
+			<section>
+				<p>
+					Second year PhD student at the Unified Database Management Systems research group
+				</p>
+				<p class="fragment">
+					Supervised by professors Jiaheng Lu and Jukka K. Nurminen
+				</p>
+				<p class="fragment">
+					My previous focus was in category theory applied to multi-model databases -- now the topic is extended with quantum computing
+				</p>
+			</section>
+
+			<section class="Introduction to quantum computing and information processing">
+				<section>
+					<h3>Quantum computing and information processing</h3>
+					<a>
+						<img src="https://i.redd.it/evpbryg87jr51.png"
+							style="height: 280px; margin: 0 auto 4rem auto; background: transparent;">
+					</a>
+				</section>
+
+				<section>
+					<p>
+						Plethora of different kinds of computing devices and computing models besides ordinary CPUs
+					</p>
+					<p>
+					<ul>
+						<li>
+							Abacus (counting frame)
+						</li>
+						<li>
+							GPUs
+						</li>
+						<li>
+							TPUs
+						</li>
+						<li>
+							DNA computing
+						</li>
+						<li>
+							<a href="https://youtu.be/FDiapbD0Xfg">Processors in Minecraft</a>
+						</li>
+					</ul>
+					</p>
+					<p class="fragment">and quantum computers.</p>
+				</section>
+
+				<section>
+					<h4>Quantum computing works on various hardware</h4>
+					<p></p>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						width="421px" height="381px" viewBox="-0.5 -0.5 421 381"
+						content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2022-01-26T10:10:44.761Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36&quot; etag=&quot;N8s0eo0AoJo5AJAiXm_E&quot; version=&quot;16.4.7&quot; type=&quot;google&quot;&gt;&lt;diagram id=&quot;Hd3tP_jg2wnosVoPhqR9&quot; name=&quot;Page-1&quot;&gt;1ZfdbpswGIavhsNEgIGQwzZtOmmauimbthxVDjjgxWBiTAi5+tnBBChMa1XIlB4U+/X/+/izYw0souMTg0n4hfqIaKbuHzXwoJmmqTum+EilKBVDn89KJWDYV1otrPAJVRWVmmEfpa2KnFLCcdIWPRrHyOMtDTJG83a1LSXtURMYoI6w8iDpqj+xz8NSdW291j8hHITVyIauSiJYVVZCGkKf5g0JPGpgwSjlZSo6LhCR7lW+lO2Wfym9TIyhmL+lwXq/JkvrgX+G4ToI79DXsNhO3LKXAySZWrCaLC8qBxjNYh/JTgwN3Och5miVQE+W5gK60EIeEVW8pTFXEE1L5jEhC0ooO/cFluc/oXcnr9ZzQIyjY0NSi3lCNEKcFaLKZXMpY9XWMmcqn9ecrMr8sMEIuEqEam8El75r+0RCOfgON43/5GbKGd1d9qc5kL+g7S+Yd/0Fdo+/pjWWv87Q/jb8jGmMeiwfxVrLeLV1e6w13D5r9bGsNXusdYgY9h7KOTC0PavOPpPnlTCRywP4Tg5qLlE8zfEOJ8jHcEpZICSZF59vGYx5Fr14mHkZ5nUHIhXI76Iq0KPy8igHFU1hVWXYGBoiMqw2vssp08TXFxnOWPTAOPS+00RER4DFdfiyr0jSKMk4Yl2Ujdq3gdFuY7SNHozgmhitj2CE7IgPih/cpOL/GdkkCUVSt3XXEMZ1oD3HaJLD4qbi7/Xx2QvuqvFnDwvOcAxjqlvWzOgCuxNRuoEce7eBCrzhqLxqjM0+girP82lBM55t0FQchFKB3BPrWB5Eq9Nhu/v1+3RaP9MuN3UTyiWJlwokOA5GIPjvHzQjQAV98WddE+q8A/VHjMWCUnkVlSdbOmxsjPmwcdv2OnrXXrPveAPvt1dk6xfouazxkAePfwA=&lt;/diagram&gt;&lt;/mxfile&gt;">
+						<defs />
+						<g>
+							<rect x="0" y="0" width="420" height="380" rx="57" ry="57" fill="#ffffff"
+								stroke="rgb(0, 0, 0)" pointer-events="all" />
+							<rect x="30" y="120" width="350" height="240" rx="36" ry="36" fill="#ffffff"
+								stroke="rgb(0, 0, 0)" stroke-width="2" pointer-events="all" />
+							<rect x="210" y="20" width="180" height="200" rx="27" ry="27" fill="none"
+								stroke="rgb(0, 0, 0)" stroke-width="2" pointer-events="all" />
+							<rect x="40" y="150" width="150" height="60" rx="9" ry="9" fill="rgb(255, 255, 255)"
+								stroke="rgb(0, 0, 0)" pointer-events="all" />
+							<g transform="translate(-0.5 -0.5)">
+								<switch>
+									<foreignObject pointer-events="none" width="100%" height="100%"
+										requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+										style="overflow: visible; text-align: left;">
+										<div xmlns="http://www.w3.org/1999/xhtml"
+											style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 148px; height: 1px; padding-top: 180px; margin-left: 41px;">
+											<div data-drawio-colors="color: rgb(0, 0, 0); "
+												style="box-sizing: border-box; font-size: 0px; text-align: center;">
+												<div
+													style="display: inline-block; font-size: 24px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+													<a href="https://en.wikipedia.org/wiki/Quantum_circuit">Circuit
+														model</a>
+												</div>
+											</div>
+										</div>
+									</foreignObject><text x="115" y="187" fill="rgb(0, 0, 0)" font-family="Helvetica"
+										font-size="24px" text-anchor="middle">Circuit model</text>
+								</switch>
+							</g>
+							<rect x="50" y="240" width="130" height="60" rx="9" ry="9" fill="rgb(255, 255, 255)"
+								stroke="rgb(0, 0, 0)" pointer-events="all" />
+							<g transform="translate(-0.5 -0.5)">
+								<switch>
+									<foreignObject pointer-events="none" width="100%" height="100%"
+										requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+										style="overflow: visible; text-align: left;">
+										<div xmlns="http://www.w3.org/1999/xhtml"
+											style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 270px; margin-left: 51px;">
+											<div data-drawio-colors="color: rgb(0, 0, 0); "
+												style="box-sizing: border-box; font-size: 0px; text-align: center;">
+												<div
+													style="display: inline-block; font-size: 24px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+													<a
+														href="https://en.wikipedia.org/wiki/Topological_quantum_computer">Topological</a>
+												</div>
+											</div>
+										</div>
+									</foreignObject><text x="115" y="277" fill="rgb(0, 0, 0)" font-family="Helvetica"
+										font-size="24px" text-anchor="middle">Topological</text>
+								</switch>
+							</g>
+							<rect x="210" y="240" width="150" height="60" rx="9" ry="9" fill="rgb(255, 255, 255)"
+								stroke="rgb(0, 0, 0)" pointer-events="all" />
+							<g transform="translate(-0.5 -0.5)">
+								<switch>
+									<foreignObject pointer-events="none" width="100%" height="100%"
+										requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+										style="overflow: visible; text-align: left;">
+										<div xmlns="http://www.w3.org/1999/xhtml"
+											style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 148px; height: 1px; padding-top: 270px; margin-left: 211px;">
+											<div data-drawio-colors="color: rgb(0, 0, 0); "
+												style="box-sizing: border-box; font-size: 0px; text-align: center;">
+												<div
+													style="display: inline-block; font-size: 24px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+													<a href="https://arxiv.org/abs/quant-ph/0508124">One-way model</a>
+												</div>
+											</div>
+										</div>
+									</foreignObject><text x="285" y="277" fill="rgb(0, 0, 0)" font-family="Helvetica"
+										font-size="24px" text-anchor="middle">One-way model</text>
+								</switch>
+							</g>
+							<rect x="230" y="150" width="130" height="60" rx="9" ry="9" fill="rgb(255, 255, 255)"
+								stroke="rgb(0, 0, 0)" pointer-events="all" />
+							<g transform="translate(-0.5 -0.5)">
+								<switch>
+									<foreignObject pointer-events="none" width="100%" height="100%"
+										requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+										style="overflow: visible; text-align: left;">
+										<div xmlns="http://www.w3.org/1999/xhtml"
+											style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 180px; margin-left: 231px;">
+											<div data-drawio-colors="color: rgb(0, 0, 0); "
+												style="box-sizing: border-box; font-size: 0px; text-align: center;">
+												<div
+													style="display: inline-block; font-size: 24px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+													<a href="https://arxiv.org/abs/1611.04471">Adiabatic</a>
+												</div>
+											</div>
+										</div>
+									</foreignObject><text x="295" y="187" fill="rgb(0, 0, 0)" font-family="Helvetica"
+										font-size="24px" text-anchor="middle">Adiabatic</text>
+								</switch>
+							</g>
+							<rect x="230" y="40" width="140" height="60" rx="9" ry="9" fill="none" stroke="rgb(0, 0, 0)"
+								pointer-events="all" />
+							<g transform="translate(-0.5 -0.5)">
+								<switch>
+									<foreignObject pointer-events="none" width="100%" height="100%"
+										requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+										style="overflow: visible; text-align: left;">
+										<div xmlns="http://www.w3.org/1999/xhtml"
+											style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 138px; height: 1px; padding-top: 70px; margin-left: 231px;">
+											<div data-drawio-colors="color: rgb(0, 0, 0); "
+												style="box-sizing: border-box; font-size: 0px; text-align: center;">
+												<div
+													style="display: inline-block; font-size: 24px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+													<a href="https://www.youtube.com/watch?v=zvfkXjzzYOo">Quantum
+														annealing</a>
+												</div>
+											</div>
+										</div>
+									</foreignObject><text x="300" y="77" fill="rgb(0, 0, 0)" font-family="Helvetica"
+										font-size="24px" text-anchor="middle">Quantum anne...</text>
+								</switch>
+							</g>
+							<rect x="80" y="330" width="250" height="30" rx="4.5" ry="4.5" fill="#ffffff"
+								stroke="rgb(0, 0, 0)" pointer-events="all" />
+							<g transform="translate(-0.5 -0.5)">
+								<switch>
+									<foreignObject pointer-events="none" width="100%" height="100%"
+										requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+										style="overflow: visible; text-align: left;">
+										<div xmlns="http://www.w3.org/1999/xhtml"
+											style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 248px; height: 1px; padding-top: 345px; margin-left: 81px;">
+											<div data-drawio-colors="color: rgb(0, 0, 0); "
+												style="box-sizing: border-box; font-size: 0px; text-align: center;">
+												<div
+													style="display: inline-block; font-size: 24px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+													Universal models</div>
+											</div>
+										</div>
+									</foreignObject><text x="205" y="352" fill="rgb(0, 0, 0)" font-family="Helvetica"
+										font-size="24px" text-anchor="middle">Universal models</text>
+								</switch>
+							</g>
+						</g>
+						<switch>
+							<g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" /><a
+								transform="translate(0,-5)"
+								xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+								target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not
+									SVG - cannot display</text></a>
+						</switch>
+					</svg>
+				</section>
+
+				<section>
+					<p>Although the hardware varies the abstract model of quantum computing is quite standard (circuit):
+					</p>
+					<ul>
+						<li><a href="https://www.meetiqm.com/">IQM</a> (circuit)</li>
+						<li><a href="https://www.ibm.com/quantum-computing/">IBM</a> (circuit, <a
+								href="https://en.wikipedia.org/wiki/Superconducting_quantum_computing">superconductor</a>)
+						</li>
+						<li><a href="https://quantumai.google/">Google</a> (circuit, <a
+								href="https://en.wikipedia.org/wiki/Superconducting_quantum_computing">superconductor</a>)
+						</li>
+						<li><a href="https://ionq.com/">IonQ</a> (circuit, <a
+								href="https://en.wikipedia.org/wiki/Trapped_ion_quantum_computer">trapped ion</a>) </li>
+						<li><a href="https://www.honeywell.com/us/en/company/quantum">Honeywell with Quantinuum</a>
+							(circuit, <a href="https://en.wikipedia.org/wiki/Trapped_ion_quantum_computer">trapped
+								ion</a>) </li>
+						<li><a href="https://www.rigetti.com/">Rigetti</a> (circuit, <a
+								href="https://en.wikipedia.org/wiki/Integrated_circuit">integrated</a>)</li>
+						<li><a
+								href="https://azure.microsoft.com/en-us/solutions/quantum-computing/#microsoft-approach">Microsoft</a>
+							(circuit, <a
+								href="https://en.wikipedia.org/wiki/Topological_quantum_computer">topological?</a>)
+						</li>
+						<li><a href="https://xanadu.ai/">Xanadu</a> (circuit, <a
+								href="https://en.wikipedia.org/wiki/Integrated_quantum_photonics">photonic</a>) </li>
+						<li><a href="https://www.dwavesys.com/">D-wave</a> (annealing &amp; <a
+								href="https://www.dwavesys.com/company/newsroom/media-coverage/techcrunch-d-wave-plans-to-build-a-gate-model-quantum-computer/">circuit
+								coming</a>) </li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Why does it work?</h4>
+					<p>The abstract foundation of quantum computing is based on quantum mechanics.</p>
+					<p class="fragment">See section <i>Introduction to quantum mechanics</i> in book <a
+							href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf">Quantum Computation and
+							Quantum Information 10th Anniversary Edition</a> by Nielsen and Chuang.</p>
+					<aside class="notes">Quantum mechanics is one of the most accurate theory in physics. The
+						book represents four simple postulates that can be used to derive all of the consequences.
+						Actually the postulates look a lot like the mathematical formulation for quantum computing. So
+						if you know quantum computing you can actually understand quantum mechanics easier.</aside>
+				</section>
+
+				<section>
+					<h4>Approaching from machine learning perspective</h4>
+					<p>
+						You have developed a machine learning model to classify cats and dogs.
+					<figure>
+						<img src="picture_with_question_mark.svg" alt="picture_with_question_mark"
+							style="height: 180px; margin: 30 auto 4rem auto;" class="picture_with_question_mark">
+						<figcaption>Image</figcaption>
+					</figure>
+					</p>
+					<p class="fragment">Model outputs that the image has 80% prob of represeting cat and 20% prob of
+						representing a dog.</p>
+				</section>
+
+				<section>
+					<h4>Approaching from machine learning perspective</h4>
+					<figure>
+						<img src="big_data_presentation.drawio.png" alt="cat_dog_superposition"
+							style="height: 180px; margin: 30 auto 4rem auto;" class="cat_dog_superposition">
+					</figure>
+					<p>If you modify the model, you want:</p>
+					<p>the prob of cat + the prob of dog = 100%</p>
+				</section>
+
+				<section>
+					<h4>Making things more abstract:</h4>
+					<p class="fragment">Instead of cats and dogs, we have vectors.</p>
+					<p class="fragment">Instead of probabilites, we have complex numbers which implicitly encode the
+						probabilities.</p>
+				</section>
+
+				<section>
+					<h5>Single qubit systems</h5>
+					<p>$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$</p>
+					<p>where $\alpha,\beta \in \Complex$ are <i>amplitudes</i> and</p>
+					<p>$|\alpha|^2 + |\beta|^2 = 1$.</p>
+					<p class="fragment"> The states $|0\rangle = \begin{bmatrix}
+						1 \\
+						0
+						\end{bmatrix}$ and $|1\rangle = \begin{bmatrix}
+						0 \\
+						1
+						\end{bmatrix}$ are called <i>computational basis</i>.</p>
+				</section>
+
+				<section>
+					<h5>Multiple qubits</h5>
+					<p>\[\begin{aligned}
+						|\psi\rangle &= (a_0|0\rangle + b_0|1\rangle) \otimes (a_1|0\rangle + b_1|1\rangle) \\
+						& = a_0a_1|00\rangle + a_0b_1|01\rangle + b_0a_1|10\rangle + b_0b_1|11\rangle.
+						\end{aligned} \]</p>
+					<p>
+						We see that $n$ qubit system has $2^n$ amplitudes (i.e. the coefficients).
+					<aside class="notes">This means that with 500 qubit fully connected quantum computer we can express
+						more amplitides
+						than the estimated number of atoms in the universe.</aside>
+					</p>
+				</section>
+
+				<section>
+					<h5>Evolution of quantum systems</h5>
+					<p class="fragment">Initial system of qubits (usually $|00\ldots0\rangle$)</p>
+					<p class="fragment"> Apply gates the qubits. Gates are modelled as unitary matrixes. The idea is
+						that the sum of the squared norms of complex amplitudes is preserved.</p>
+					<p class="fragment"> Measure the system. The system ends up to some classical state. The sequence of
+						classical bits is the result of the quantum computation.</p>
+				</section>
+
+				<section>
+					<h3>Two big advantages of quantum computing</h3>
+				</section>
+
+				<section>
+					<h3>Superposition</h3>
+					<p>One qubit can be in multiple states simultaneously.</p>
+					<p>For example, the most common method to put a qubit to a superposition is to apply
+						Hadamar-gate</p>
+					<p>$H|0\rangle = \frac{1}{\sqrt{2}}\begin{bmatrix}
+						1 & 1 \\
+						1 & -1
+						\end{bmatrix}\begin{bmatrix}
+						1 \\
+						0
+						\end{bmatrix} = \frac{1}{\sqrt{2}} \begin{bmatrix}
+						1 \\
+						1
+						\end{bmatrix} = \frac{|0\rangle + |1\rangle}{\sqrt{2}}$.</p>
+				</section>
+
+				<section>
+					<h3>Entanglement</h3>
+					<p>Entanglement roughly means that two or more qubits are connected and they can interact in ways
+						such that
+						the state of each qubit cannot be described independently of the state of the other qubits.
+					</p>
+					<p class="fragment">For example, the most common method to entangle two qubits is to use CNOT gate:
+					</p>
+					<p class="fragment"> CNOT$(|x\rangle \otimes |y\rangle) = |x\rangle \otimes |x + y \mod 2\rangle$.
+					</p>
+					<aside class="notes">We see that the first qubit $x$ affect on the value of the second qubit. In the
+						case of CNOT, the first qubit is called a control qubit and the second one is called a target
+						qubit.
+
+						Again, the CNOT gate has a unitary matrix representation as 4x4 matric. This representation is
+						actually quite simple.</aside>
+				</section>
+
+				<section>
+					<h3>Some challenges in quantum information processing</h3>
+					<h4>that are related to "data"</h4>
+					<a href="https://xkcd.com/1591/"><img src="https://imgs.xkcd.com/comics/bells_theorem.png"></a>
+					<aside class="notes">These challenges are especially restricting from data storing perspective.
+					</aside>
+				</section>
+
+				<section>
+					<h3>No-cloning theorem</h3>
+					<p>Theoretically provable theorem that quantum states cannot be copied or cloned.</p>
+					<p>See Box 12.1: The no-cloning theorem in book <a
+							href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf">Quantum Computation and
+							Quantum Information.</a></p>
+					<aside class="notes">Implies no-broadcasting theorem which says that a quantum state cannot be
+						conveyed to two or more recipients.</aside>
+				</section>
+
+				<section>
+					<h3>Measuring destroys states</h3>
+					<p>Measuring a qubit collapses it to either 0 or 1. After the measurement we cannot modify the
+						measured qubit anymore.</p>
+				</section>
+
+				<section>
+					<h3>Error</h3>
+					<p>Quantum computing is never performed in absolutely isoleted system and the environment creates
+						decoherence and other quantum noise.</p>
+					<p class="fragment"> We can tackle the error by
+						developing quantum error correction.</p>
+					<aside class="notes">We could not measure an absolutely isolated system.</aside>
+				</section>
+
+			</section>
+
+			<section class="Quantum annealing">
+
+				<section>
+					<h3>Quantum annealing</h3>
+					<h4>Quadratic Unconstrained Binary Optimization (QUBO) on quantum annealers</h4>
+				</section>
+
+				<section>
+					<h2>Implementation by</h2>
+					<a href="https://www.dwavesys.com/company/about-d-wave/">
+						<img src="https://www.dwavesys.com/media/j31olsrx/d-wave.svg" alt="annealing_example"
+							style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<p>Initial paper in Nature:
+						<a href="https://www.nature.com/articles/nature10012">Quantum annealing with manufactured
+							spins</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Motivation for quantum annealing</h2>
+					<p>
+						D-wave has many examples of use cases:
+					</p>
+					<ul>
+						<span style="display: inline-block;" class="fragment fade-down visible" data-fragment-index="0">
+							<li><a href="https://youtu.be/Uenk1SF8NsI">Volkswagen: paint shop optimization</a></li>
+						</span>
+						<span style="display: inline-block;" class="fragment fade-down visible" data-fragment-index="1">
+							<li><a href="https://youtu.be/3adkR-20WAM">Menten AI: protein design optimization</a></li>
+						</span>
+						<span style="display: inline-block;" class="fragment fade-down visible" data-fragment-index="2">
+							<li><a href="https://youtu.be/7ZRaFuMKm94">NASA: QuAIL Activities</a></li>
+						</span>
+						<span style="display: inline-block;" class="fragment fade-down visible current-fragment"
+							data-fragment-index="3">
+							<li><a href="https://www.eventbrite.ca/e/qubits-2021-on-demand-tickets-192352691077">More
+									examples in Qubits conference</a></li>
+						</span>
+					</ul>
+				</section>
+
+				<section>
+					<h2>General idea</h2>
+					<p>
+						Goal: finding the global minimum of a given objective function
+					</p>
+				</section>
+
+				<section>
+					<h2 style="color: black;">Simulated annealing on classical hardware</h2>
+					<p>
+						<img src = "hill_Climbing_with_Simulated_Annealing.gif"/>
+					</p>
+				</section>
+
+				<section>
+					<h2>Annealing process: bias</h2>
+					<a href="https://docs.dwavesys.com/docs/latest/c_gs_2.html">
+						<img src="https://docs.dwavesys.com/docs/latest/_images/change.png" alt="annealing_example"
+							style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+				</section>
+
+				<section>
+					<h2>Annealing process: couplers</h2>
+					<a href="https://docs.dwavesys.com/docs/latest/c_gs_2.html">
+						<img src="https://docs.dwavesys.com/docs/latest/_images/4states.png" alt="annealing_example"
+							style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+				</section>
+
+				<section>
+					<h2>Relationship to circuit-model</h2>
+					<p>
+						<a href="https://github.com/1ucian0/qiskit-presentations/tree/aalto/2021-11-19_workshop_aalto">Qiskit
+							Workshop at Aalto</a>
+					</p>
+					<ul>
+						<li>Compare <a href="https://github.com/orgs/dwave-examples/repositories">D-Wave systems
+								examples</a> to <a
+								href="https://github.com/Qiskit/qiskit-optimization/tree/main/qiskit_optimization/applications">Qiskit
+								optimization's applications</a></li>
+						<li>Compare <a
+								href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/algorithms/05_qaoa.ipynb">Quantum
+								Approximate Optimization Algorithm for graph partition</a> to <a
+								href="https://github.com/dwave-examples/graph-partitioning">graph partitioning algorithm
+								on D-wave</a></li>
+					</ul>
+				</section>
+
+			</section>
+
+			<section>
+
+				<section>
+					<h3>
+						What kind of database problems are we tackling with quantum computing?
+					</h3>
+					<p class="fragment"><small>The research plan published in: Uotila, Valter . Synergy between Quantum Computers and Databases . 
+						in Proceedings of the VLDB 2022 PhD Workshop co-located with the 48th International Conference on Very Large Databases (VLDB 2022), 
+						05/09/2022 . http://ceur-ws.org/Vol-3186/paper_1.pdf</small></p>
+				</section>
+
+				<section>
+					<p>
+						Solving classical database optimization and modeling problems with quantum computing
+					</p>
+					<ul>
+						<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="0">
+							<li> <a href="https://youtu.be/mL-hWbwVphk">SQL2Circuits: Predicting metrics for SQL queries with quantum natural language processing method
+									(ongoing)</a>
+							</li>
+						</span>
+						<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="1">
+							<li> Optimizing task and virtual machine allocation (ongoing)
+							</li>
+						</span>
+						<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="2">
+							<li><a href="https://ieeexplore.ieee.org/document/9101694">Join order optimization</a> (near future)</li>
+						</span>
+						<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="3">
+							<li><a href="https://dl.acm.org/doi/10.1145/2220357.2220363">Size bounds for
+									conjunctive queries</a> (future)</li>
+						</span>
+						<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="4">
+							<li><a href="https://en.wikipedia.org/wiki/Feedback_vertex_set">Transaction scheduling</a> (collaboration work)</li>
+						</span>
+					</ul>
+					<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="5">
+						<p>
+							Problem: quantum computing might not scale and bring any benefits
+						</p>
+					</span>
+				</section>
+
+				<section>
+					<h3>SQL2Circuits: Predicting metrics for SQL queries with quantum natural language processing method</h3>
+					<p class="fragment"> Transformation of SQL queries into parametrized circuits based on their context-free grammar representation </p>
+					<p class="fragment">Optimizing circuit parameters so that the framework could predict execution times and cardinalities</p>
+				</section>
+
+				<section>
+					<h3>Optimizing task and virtual machine allocation</h3>
+					<p class="fragment"> Quantum annealing -based QUBO formulation for task and virtual machine allocation to physical machines in data centers </p>
+					<p class="fragment">We are taking into account energy consumption and sustainability metrics</p>
+					<p class = "fragment"><small>Uotila, Valter and Lu, Jiaheng. Quantum Annealing Method for Dynamic Virtual Machine and Task Allocation in Cloud Infrastructures from Sustainability Perspective. SMDB 2023 Workshop. In review.</small></p>
+				</section>
+
+				<section>
+					<h3>Join order optimization</h3>
+					<p class="fragment"> One of the most classical database problems: find the optimal way to join relational tables </p>
+					<p class="fragment">Already has a QUBO formulation but the formulation is not spesific for this problem: we aim to find specific QUBO formulation</p>
+				</section>
+
+			</section>
+
+			<section class="Conclusion">
+
+				<section>
+					<h4>
+						As a conclusion, quantum computing will not yet reshape database field
+					</h4>
+					<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="0"><p>The current hardware has limited capabilites.</p></span>
+					<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="1"><p>But quantum computing offers many interesting promises which we research:</p></span>
+
+						<ul>
+							<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="2">
+								<li> computational speedup
+								</li>
+							</span>
+							<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="3">
+								<li> new methods to develop and design novel algorithms
+								</li>
+							</span>
+							<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="4">
+								<li> hybrid frameworks
+								</li>
+							</span>
+							<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="5">
+								<li> quantum machine learning is a big topic
+								</li>
+							</span>
+							<span style="display: inline-block;" class="fragment fade-down" data-fragment-index="6">
+								<li> probably lower energy consumption
+								</li>
+							</span>
+						</ul>
+				</section>
+
+				<section>
+					<p>
+						<img src ="qhack.png"/>
+					</p>
+				</section>
+
+				<section>
+					<h3>
+						Thank you for your interest and the opportunity to give a presentation!
+					</h3>
+					<p>
+						Questions, comments, dicussion?
+					</p>
+				</section>
+
+			</section>
+
+			<section style="top: 97.5px; display: block;" class="present">
+				<h3>This presentation is created using</h3>
+				<a href="https://revealjs.com">
+					<img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo"
+						style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</a>
+				<h3>The HTML Presentation Framework</h3>
+				<p>
+					<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a
+							href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+				</p>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+	<script src="plugin/math/math.js"></script>
+	<script>
+		Reveal.initialize({ plugins: [RevealMath.KaTeX] });
+	</script>
+</body>
+
+</html>

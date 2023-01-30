@@ -5,12 +5,21 @@
     <link>https://valteruo.github.io/</link>
       <atom:link href="https://valteruo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Valter</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Sep 2022 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Valter</title>
       <link>https://valteruo.github.io/</link>
     </image>
+    
+    <item>
+      <title>Synergy between Quantum Computers and Databases</title>
+      <link>https://valteruo.github.io/publication/vldb22_phd_workshop/</link>
+      <pubDate>Mon, 05 Sep 2022 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/vldb22_phd_workshop/</guid>
+      <description>&lt;p&gt;A short paper that outlines my research connecting quantum computing, databases and category theory.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Studies on Solving Kakuro Puzzle with Grover&#39;s Algorithm</title>
@@ -2085,24 +2094,6 @@ print(MCToffoli2(weights, x))
       <pubDate>Fri, 20 Aug 2021 01:00:00 +0000</pubDate>
       <guid>https://valteruo.github.io/publication/seadata21/</guid>
       <description>&lt;p&gt;Invited short paper for SEAData workshop at VLDB 2021.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>https://valteruo.github.io/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://valteruo.github.io/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>https://valteruo.github.io/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://valteruo.github.io/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
 </description>
     </item>
     
