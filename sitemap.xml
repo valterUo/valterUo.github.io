@@ -4,9 +4,77 @@
   
   
   <url>
-    <loc></loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc></loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://valteruo.github.io/publication-type/1/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://valteruo.github.io/tag/data-management/</loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/quantum-computing/</loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/event/</loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tags/</loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/talk/the-international-workshop-on-quantum-data-science-and-management-qdsm-2023/</loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/</loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/vldb-2023-workshops/</loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-09-01T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/publication-type/1/</loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/publication_types/</loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/publication/</loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/quantum-machine-learning/</loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/publication/sigmod23/</loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/tutorial/</loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-06-22T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/estimating-metrics-for-sql/</loc><lastmod>2023-04-05T17:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/quantum-natural-language-processing/</loc><lastmod>2023-04-05T17:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/talk/sql-query-classification-with-a-quantum-natural-language-processing-approach/</loc><lastmod>2023-04-05T17:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-04-05T17:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/publication-type/3/</loc><lastmod>2023-04-03T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/data-centers/</loc><lastmod>2023-04-03T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/quantum-annealing/</loc><lastmod>2023-04-03T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/publication/smdb23/</loc><lastmod>2023-04-03T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/sustainability/</loc><lastmod>2023-04-03T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/tag/visionary/</loc><lastmod>2023-04-03T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://valteruo.github.io/talk/quantum-circuit-learning-method-for-sql-cardinality-cost-and-time-estimation/</loc><lastmod>2022-11-14T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://valteruo.github.io/tag/category-theory/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -14,17 +82,7 @@
   <url>
     <loc>https://valteruo.github.io/tag/join-order-optimization/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://valteruo.github.io/publication_types/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://valteruo.github.io/publication/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://valteruo.github.io/tag/quantum-computing/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://valteruo.github.io/publication/vldb22_phd_workshop/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://valteruo.github.io/tags/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://valteruo.github.io/</loc><lastmod>2022-09-05T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://valteruo.github.io/categories/</loc><lastmod>2022-06-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -82,13 +140,9 @@
   <url>
     <loc></loc><lastmod>2021-11-02T13:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://valteruo.github.io/event/</loc><lastmod>2021-11-02T13:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc></loc><lastmod>2021-11-02T13:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://valteruo.github.io/tag/transformers/</loc><lastmod>2021-11-02T13:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc></loc><lastmod>2021-11-02T13:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://valteruo.github.io/publication/poly21/</loc><lastmod>2021-08-20T10:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -97,8 +151,6 @@
     <loc>https://valteruo.github.io/tag/document-data/</loc><lastmod>2021-08-20T10:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://valteruo.github.io/tag/graph-data/</loc><lastmod>2021-08-20T10:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc></loc><lastmod>2021-08-20T10:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://valteruo.github.io/tag/multi-model-data/</loc><lastmod>2021-08-20T10:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -112,8 +164,6 @@
   <url>
     <loc></loc><lastmod>2021-08-20T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc></loc><lastmod>2021-08-20T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://valteruo.github.io/publication/multicategory_demo_system_vldb21/</loc><lastmod>2021-08-20T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc></loc><lastmod>2021-08-20T08:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -122,4 +172,4 @@
   <url>
     <loc>https://valteruo.github.io/publication/seadata21/</loc><lastmod>2021-08-20T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://valteruo.github.io/tag/visionary/</loc><lastmod>2021-08-20T01:00:00+00:00</lastmod><changefreq>weekly</changefreq></url></urlset>
+    <loc></loc><changefreq>weekly</changefreq></url></urlset>

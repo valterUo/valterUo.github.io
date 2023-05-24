@@ -5,12 +5,21 @@
     <link>https://valteruo.github.io/publication-type/1/</link>
       <atom:link href="https://valteruo.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Sep 2022 01:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 22 Jun 2023 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://valteruo.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Quantum Machine Learning: Foundation, New Techniques, and Opportunities for Database Research</title>
+      <link>https://valteruo.github.io/publication/sigmod23/</link>
+      <pubDate>Thu, 22 Jun 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/sigmod23/</guid>
+      <description>&lt;p&gt;See &lt;a href=&#34;https://www.helsinki.fi/en/researchgroups/unified-database-management-systems-udbms/sigmod-2023-tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&amp;rsquo;s website&lt;/a&gt; for more details. I will update the paper and more information when they are available.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Synergy between Quantum Computers and Databases</title>

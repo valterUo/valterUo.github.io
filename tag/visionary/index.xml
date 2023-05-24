@@ -5,12 +5,21 @@
     <link>https://valteruo.github.io/tag/visionary/</link>
       <atom:link href="https://valteruo.github.io/tag/visionary/index.xml" rel="self" type="application/rss+xml" />
     <description>visionary</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Aug 2021 01:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 Apr 2023 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>visionary</title>
       <link>https://valteruo.github.io/tag/visionary/</link>
     </image>
+    
+    <item>
+      <title>Quantum Annealing Method for Dynamic Virtual Machine and Task Allocation in Cloud Infrastructures from A Sustainability Perspective</title>
+      <link>https://valteruo.github.io/publication/smdb23/</link>
+      <pubDate>Mon, 03 Apr 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/smdb23/</guid>
+      <description>&lt;p&gt;I will update link to the paper after it is published.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Multi-model Query Processing Meets Category Theory and Functional Programming</title>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>quantum natural language processing | Valter</title>
+    <link>https://valteruo.github.io/tag/quantum-natural-language-processing/</link>
+      <atom:link href="https://valteruo.github.io/tag/quantum-natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <description>quantum natural language processing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Apr 2023 17:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>quantum natural language processing</title>
+      <link>https://valteruo.github.io/tag/quantum-natural-language-processing/</link>
+    </image>
+    
+    <item>
+      <title>SQL Query Classification with A Quantum Natural Language Processing Approach</title>
+      <link>https://valteruo.github.io/talk/sql-query-classification-with-a-quantum-natural-language-processing-approach/</link>
+      <pubDate>Wed, 05 Apr 2023 17:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/talk/sql-query-classification-with-a-quantum-natural-language-processing-approach/</guid>
+      <description>&lt;p&gt;Abstract from &lt;a href=&#34;https://www.uio.no/dscience/english/news-and-events/events/dscience-brain-talk-5.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BrainTalk&amp;rsquo;s website&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;This work proposes a quantum natural language processing-inspired approach for classifying SQL queries based on their execution times and cardinalities. Using parameterized quantum circuits and an iterative method for their optimization, we estimate query metrics by executing optimized circuits on a quantum computer or simulating them. Our results achieve comparable accuracy to previous research in quantum natural language processing, suggesting the potential of this approach in applications beyond quantum natural language processing. We also analyze the model&amp;rsquo;s expressibility and entangling capability histograms for further insights.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantum Circuit Learning Method for SQL Cardinality, Cost and Time Estimation</title>
+      <link>https://valteruo.github.io/talk/quantum-circuit-learning-method-for-sql-cardinality-cost-and-time-estimation/</link>
+      <pubDate>Mon, 14 Nov 2022 08:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/talk/quantum-circuit-learning-method-for-sql-cardinality-cost-and-time-estimation/</guid>
+      <description>&lt;p&gt;Structured Query Language (SQL) is the most used relational database query language in the world. In modern applications, data volume, variety, and connectivity have increased. Querying data should not become a bottleneck in data-intensive applications.&lt;/p&gt;
+&lt;p&gt;Query processors in relational databases can assign SQL queries to various measurements, such as cardinality, cost, and execution time estimations [1]. The optimization of the query heavily depends on the estimates. Usually, the problem is solved with machine learning, dynamic programming, or integer programming.
+Quantum computers are reaching the level where they can be part of various applications on a small scale. We believe that databases and quantum computers will be co-designed in the future so that combinatorically hard database optimization problems can be solved efficiently and with high quality on quantum computers. 
+As far as we know, our work is the first attempt to apply quantum computing and quantum circuit learning as a part of the SQL query optimization pipeline. Even if we cannot beat the classical methods with the current quantum hardware, we can point out its limitations, understand quantum computing frameworks in a circuit learning context, and propose novel methods to model the problems with quantum computing algorithms. Especially quantum computing and machine learning are a promising combination because both are based on linear algebra and probability theory.&lt;/p&gt;
+&lt;p&gt;We utilize methods from quantum natural language processing (QNLP) [2] and quantum circuit learning [3]. First, we parse SQL queries and represent them using context-free grammar (CFG) diagrams. The CFG diagrams are functorially mapped to pregroup grammar diagrams. We perform a rewriting process for the pregroup grammar diagrams to optimize and reduce their size.  We functorially translated them into parameterized quantum circuits. We will optimize the circuit parameters using standard quantum circuit learning pipelines. A quantum computer or a simulator is used to evaluate the circuit, but the actual training happens on classical hardware.&lt;/p&gt;
+&lt;p&gt;This is still ongoing work. Currently, we are at the phase where we can represent SELECT-FROM-WHERE type of SQL queries with complex filtering and join expressions using pregroup grammar diagrams and parametrized circuits. The corresponding results from QNLP are promising. We are excited to be able to express complex SQL queries as parametrized circuits and utilize the quantum circuit learning methods.&lt;/p&gt;
+&lt;p&gt;[1] Lan, H., Bao, Z. &amp;amp; Peng, Y. A Survey on Advancing the DBMS Query Optimizer: Cardinality Estimation, Cost Model, and Plan Enumeration. Data Sci. Eng. 6, 86–101 (2021). &lt;a href=&#34;https://doi.org/10.1007/s41019-020-00149-7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1007/s41019-020-00149-7&lt;/a&gt;
+[2] Meichanetzidis, K., Gogioso, S., De Felice, G., Chiappori, N., Toumi, A., &amp;amp; Coecke, B. (2020). Quantum natural language processing on near-term quantum computers. arXiv preprint arXiv:2005.04147.
+[3] Mitarai, K., Negoro, M., Kitagawa, M., &amp;amp; Fujii, K. (2018). Quantum circuit learning. Physical Review A, 98(3), 032309.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

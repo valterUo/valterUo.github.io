@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sustainability | Valter</title>
+    <link>https://valteruo.github.io/tag/sustainability/</link>
+      <atom:link href="https://valteruo.github.io/tag/sustainability/index.xml" rel="self" type="application/rss+xml" />
+    <description>sustainability</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 Apr 2023 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>sustainability</title>
+      <link>https://valteruo.github.io/tag/sustainability/</link>
+    </image>
+    
+    <item>
+      <title>Quantum Annealing Method for Dynamic Virtual Machine and Task Allocation in Cloud Infrastructures from A Sustainability Perspective</title>
+      <link>https://valteruo.github.io/publication/smdb23/</link>
+      <pubDate>Mon, 03 Apr 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/smdb23/</guid>
+      <description>&lt;p&gt;I will update link to the paper after it is published.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
