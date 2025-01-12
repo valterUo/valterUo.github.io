@@ -2,19 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://valteruo.github.io/workshops/qdsm23/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/workshops/qdsm24/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/workshops/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://valteruo.github.io/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/competitions/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/competitions/competitions/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/presentations/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/presentations/presentations/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -126,6 +130,14 @@
     <lastmod>2024-08-30T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://valteruo.github.io/workshops/qdsm24/</loc>
+    <lastmod>2024-08-30T00:00:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/workshops/</loc>
+    <lastmod>2024-08-30T00:00:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://valteruo.github.io/tags/category-theory/</loc>
     <lastmod>2024-06-19T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -206,10 +218,6 @@
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://valteruo.github.io/post/data-visualization/</loc>
-    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://valteruo.github.io/post/teach-courses/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -260,6 +268,10 @@
   </url><url>
     <loc>https://valteruo.github.io/tags/tutorial/</loc>
     <lastmod>2023-09-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/workshops/qdsm23/</loc>
+    <lastmod>2023-09-01T00:00:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://valteruo.github.io/papers/sigmod23/</loc>
@@ -364,38 +376,6 @@
   </url><url>
     <loc>https://valteruo.github.io/papers/seadata21_vldb21/</loc>
     <lastmod>2021-08-20T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication/preprint/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication_types/article/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/large-language-models/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication/journal-article/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication_types/article-journal/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/source-themes/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations | Valter</title>
+    <link>https://valteruo.github.io/presentations/</link>
+      <atom:link href="https://valteruo.github.io/presentations/index.xml" rel="self" type="application/rss+xml" />
+    <description>Presentations</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Presentations</title>
+      <link>https://valteruo.github.io/presentations/</link>
+    </image>
+    
+    <item>
+      <title>Presentations</title>
+      <link>https://valteruo.github.io/presentations/presentations/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/presentations/presentations/</guid>
+      <description>&lt;h3 id=&#34;quantum-machine-learning-on-databases-without-classical-optimizers&#34;&gt;Quantum machine learning on databases without classical optimizers&lt;/h3&gt;
+&lt;p&gt;at &lt;a href=&#34;https://fcai.fi/ai-day-2024&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AI Day 2024 + Nordic AI Meet&lt;/a&gt; on October 21&amp;ndash;22, 2024. &lt;em&gt;Poster presentation&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;invited-talk-sql-query-classification-with-a-quantum-natural-language-processing-approach&#34;&gt;Invited Talk: SQL Query Classification with A Quantum Natural Language Processing Approach&lt;/h3&gt;
+&lt;p&gt;at &lt;a href=&#34;https://www.ifis.uni-luebeck.de/~groppe/bidede/2023&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;International Workshop on Big Data in Emergent Distributed Environments (BiDEDE 2023)&lt;/a&gt; in conjunction with the 2023 ACM SIGMOD Conference in Seattle on June 18, 2023. &lt;em&gt;Oral presentation&lt;/em&gt;. Related to &lt;a href=&#34;https://arxiv.org/abs/2306.08529&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SQLCircuits paper&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;sql-query-classification-with-a-quantum-natural-language-processing-approach&#34;&gt;SQL Query Classification with A Quantum Natural Language Processing Approach&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.uio.no/dscience/english/news-and-events/events/dscience-brain-talk-5.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;at dScience: BRAIN TALK #5&lt;/a&gt; on May 4, 2023. &lt;a href=&#34;https://youtu.be/lBFEAtDGyUs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video on YouTube&lt;/a&gt;. &lt;em&gt;Oral presentation.&lt;/em&gt; Related to &lt;a href=&#34;https://arxiv.org/abs/2306.08529&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SQLCircuits paper&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;quantum-circuit-learning-method-for-sql-cardinality-cost-and-time-estimation&#34;&gt;Quantum Circuit Learning Method for SQL Cardinality, Cost and Time Estimation&lt;/h3&gt;
+&lt;p&gt;at &lt;a href=&#34;https://2022.nordicaimeet.com/oralpresentations&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the Nordic AI young researcher symposium&lt;/a&gt; in Oslo on November 15, 2022. &lt;em&gt;Oral presentation.&lt;/em&gt; Related to &lt;a href=&#34;https://arxiv.org/abs/2306.08529&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SQLCircuits paper&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;finnish-poetry-generation-using-fine-tuned-mbart&#34;&gt;Finnish Poetry Generation Using Fine-tuned mBART&lt;/h3&gt;
+&lt;p&gt;at &lt;a href=&#34;https://nordicaimeet.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the Nordic AI young researcher symposium&lt;/a&gt; with Sardana Ivanova, Michele Boggia, Hannu Toivonen in Oslo on November 2, 2021. &lt;a href=&#34;https://youtu.be/hux79WvZxYU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video on YouTube&lt;/a&gt;. &lt;em&gt;Oral presentation.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

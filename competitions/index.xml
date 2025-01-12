@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Competitions | Valter</title>
+    <link>https://valteruo.github.io/competitions/</link>
+      <atom:link href="https://valteruo.github.io/competitions/index.xml" rel="self" type="application/rss+xml" />
+    <description>Competitions</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Competitions</title>
+      <link>https://valteruo.github.io/competitions/</link>
+    </image>
+    
+    <item>
+      <title>Competitions</title>
+      <link>https://valteruo.github.io/competitions/competitions/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/competitions/competitions/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;InstituteQ &lt;a href=&#34;https://instituteq.fi/3-minute-thesis-winners-from-the-finnish-quantum-days/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Three Minute Thesis Competition&lt;/a&gt; 2024 Runner-up Prize&lt;/li&gt;
+&lt;li&gt;Second place with Arianne Meijer-van de Griend, Ilmo Salmenperä, Leo Becker and Frans Perkkola at &lt;a href=&#34;https://new.ultrahack.org/hackathons/hanken-quantum-hackathon-2023&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hanken Quantum Hackathon 2023&lt;/a&gt; &amp;ndash; Sustainable Finance in the Quantum Era&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://quantuminternetalliance.org/2023/11/21/qia-concludes-quantum-internet-application-challenge-2023-names-best-submission/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Special mention&lt;/a&gt; at the Quantum Internet Application Challenge 2023&lt;/li&gt;
+&lt;li&gt;Xanadu&amp;rsquo;s &lt;a href=&#34;https://pennylane.ai/blog/2023/04/qhack-2023-highlights&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QHack 2023&lt;/a&gt; hackathon:
+&lt;ul&gt;
+&lt;li&gt;Winner of &lt;a href=&#34;https://pennylane.ai/blog/2023/04/qhack-2023-highlights/#open-hackathon&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hybrid Quantum-Classical Computing Challenge&lt;/a&gt; with project called MatriQ&lt;/li&gt;
+&lt;li&gt;Second place in &lt;a href=&#34;https://github.com/XanaduAI/QHack2023#quantum-computing-today&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantum computing today! Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Xanadu&amp;rsquo;s &lt;a href=&#34;https://qhack.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QHack 2022&lt;/a&gt; hackathon:
+&lt;ul&gt;
+&lt;li&gt;Winner of &lt;a href=&#34;https://aws.amazon.com/blogs/quantum-computing/qhack-2022-highlights-and-amazon-braket-challenge-winners-announced/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Most creative Open Hackathon experiment on Braket&lt;/a&gt; in Amazon Braket Challenge&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pennylane.ai/blog/2022/03/qhack-2022-the-one-of-a-kind-celebration-of-quantum-computing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Third place&lt;/a&gt; in IBM Qiskit Challenge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Finalist in &lt;a href=&#34;https://www.press.bmwgroup.com/global/article/detail/T0362463EN/bmw-group-quantum-computing-challenge:-the-winners-have-been-decided?language=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BMW Group Quantum Computing Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
