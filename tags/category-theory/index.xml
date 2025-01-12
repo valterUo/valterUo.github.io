@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category Theory | Valter</title>
+    <link>https://valteruo.github.io/tags/category-theory/</link>
+      <atom:link href="https://valteruo.github.io/tags/category-theory/index.xml" rel="self" type="application/rss+xml" />
+    <description>Category Theory</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 19 Jun 2024 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Category Theory</title>
+      <link>https://valteruo.github.io/tags/category-theory/</link>
+    </image>
+    
+    <item>
+      <title>SQL2Circuits: Estimating Metrics for SQL Queries with a Quantum Natural Language Processing Method</title>
+      <link>https://valteruo.github.io/papers/sql2circuits/</link>
+      <pubDate>Wed, 19 Jun 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/sql2circuits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synergy between Quantum Computers and Databases</title>
+      <link>https://valteruo.github.io/papers/phd_workshop_vldb22/</link>
+      <pubDate>Mon, 05 Sep 2022 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/phd_workshop_vldb22/</guid>
+      <description>&lt;p&gt;A short paper that outlines my research connecting quantum computing, databases and category theory.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Formal Category Theoretical Framework for Multi-model Data Transformations</title>
+      <link>https://valteruo.github.io/papers/poly21_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 10:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/poly21_vldb21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MultiCategory: Multi-Model Query Processing Meets Category Theory and Functional Programming</title>
+      <link>https://valteruo.github.io/papers/multicategory_demo_system_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 08:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/multicategory_demo_system_vldb21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-model Query Processing Meets Category Theory and Functional Programming</title>
+      <link>https://valteruo.github.io/papers/seadata21_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/seadata21_vldb21/</guid>
+      <description>&lt;p&gt;Invited short paper for SEAData workshop at VLDB 2021.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

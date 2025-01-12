@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers | Valter</title>
+    <link>https://valteruo.github.io/papers/</link>
+      <atom:link href="https://valteruo.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
+    <description>Papers</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Papers</title>
+      <link>https://valteruo.github.io/papers/</link>
+    </image>
+    
+    <item>
+      <title>Tensor Decompositions and Adiabatic Quantum Computing for Discovering Practical Matrix Multiplication Algorithms</title>
+      <link>https://valteruo.github.io/papers/technical_paper_quantum_week_24/</link>
+      <pubDate>Fri, 20 Sep 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/technical_paper_quantum_week_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gate Teleportation in Noisy Quantum Networks with the SquidASM Simulator</title>
+      <link>https://valteruo.github.io/papers/workshop_paper_quantum_week_24/</link>
+      <pubDate>Wed, 18 Sep 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/workshop_paper_quantum_week_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Annealing: Emerging Exploration for Database Optimization</title>
+      <link>https://valteruo.github.io/papers/tutorial_quantum_week_24/</link>
+      <pubDate>Tue, 17 Sep 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/tutorial_quantum_week_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphs on Qubits: Demonstrating Three Graph Algorithms on Quantum Computers</title>
+      <link>https://valteruo.github.io/papers/graphs_on_qubits_qdsm24/</link>
+      <pubDate>Fri, 30 Aug 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/graphs_on_qubits_qdsm24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL2Circuits: Estimating Metrics for SQL Queries with a Quantum Natural Language Processing Method</title>
+      <link>https://valteruo.github.io/papers/sql2circuits/</link>
+      <pubDate>Wed, 19 Jun 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/sql2circuits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Join Order Selection with Deep Reinforcement Learning: Fundamentals, Techniques, and Challenges</title>
+      <link>https://valteruo.github.io/papers/vldb23/</link>
+      <pubDate>Fri, 01 Sep 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/vldb23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Machine Learning: Foundation, New Techniques, and Opportunities for Database Research</title>
+      <link>https://valteruo.github.io/papers/sigmod23/</link>
+      <pubDate>Thu, 22 Jun 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/sigmod23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Annealing Method for Dynamic Virtual Machine and Task Allocation in Cloud Infrastructures from A Sustainability Perspective</title>
+      <link>https://valteruo.github.io/papers/smdb23/</link>
+      <pubDate>Mon, 03 Apr 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/smdb23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synergy between Quantum Computers and Databases</title>
+      <link>https://valteruo.github.io/papers/phd_workshop_vldb22/</link>
+      <pubDate>Mon, 05 Sep 2022 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/phd_workshop_vldb22/</guid>
+      <description>&lt;p&gt;A short paper that outlines my research connecting quantum computing, databases and category theory.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stability Index of Real Varieties – Theorem of Bröcker and Scheiderer</title>
+      <link>https://valteruo.github.io/papers/masters_thesis/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/masters_thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Formal Category Theoretical Framework for Multi-model Data Transformations</title>
+      <link>https://valteruo.github.io/papers/poly21_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 10:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/poly21_vldb21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MultiCategory: Multi-Model Query Processing Meets Category Theory and Functional Programming</title>
+      <link>https://valteruo.github.io/papers/multicategory_demo_system_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 08:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/multicategory_demo_system_vldb21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-model Query Processing Meets Category Theory and Functional Programming</title>
+      <link>https://valteruo.github.io/papers/seadata21_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/seadata21_vldb21/</guid>
+      <description>&lt;p&gt;Invited short paper for SEAData workshop at VLDB 2021.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

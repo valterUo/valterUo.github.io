@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Join Order Optimization | Valter</title>
+    <link>https://valteruo.github.io/tags/join-order-optimization/</link>
+      <atom:link href="https://valteruo.github.io/tags/join-order-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Join Order Optimization</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Join Order Optimization</title>
+      <link>https://valteruo.github.io/tags/join-order-optimization/</link>
+    </image>
+    
+    <item>
+      <title>Quantum Annealing: Emerging Exploration for Database Optimization</title>
+      <link>https://valteruo.github.io/papers/tutorial_quantum_week_24/</link>
+      <pubDate>Tue, 17 Sep 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/tutorial_quantum_week_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synergy between Quantum Computers and Databases</title>
+      <link>https://valteruo.github.io/papers/phd_workshop_vldb22/</link>
+      <pubDate>Mon, 05 Sep 2022 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/phd_workshop_vldb22/</guid>
+      <description>&lt;p&gt;A short paper that outlines my research connecting quantum computing, databases and category theory.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

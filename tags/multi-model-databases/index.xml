@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multi-Model Databases | Valter</title>
+    <link>https://valteruo.github.io/tags/multi-model-databases/</link>
+      <atom:link href="https://valteruo.github.io/tags/multi-model-databases/index.xml" rel="self" type="application/rss+xml" />
+    <description>Multi-Model Databases</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Aug 2021 08:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Multi-Model Databases</title>
+      <link>https://valteruo.github.io/tags/multi-model-databases/</link>
+    </image>
+    
+    <item>
+      <title>MultiCategory: Multi-Model Query Processing Meets Category Theory and Functional Programming</title>
+      <link>https://valteruo.github.io/papers/multicategory_demo_system_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 08:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/multicategory_demo_system_vldb21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-model Query Processing Meets Category Theory and Functional Programming</title>
+      <link>https://valteruo.github.io/papers/seadata21_vldb21/</link>
+      <pubDate>Fri, 20 Aug 2021 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/seadata21_vldb21/</guid>
+      <description>&lt;p&gt;Invited short paper for SEAData workshop at VLDB 2021.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

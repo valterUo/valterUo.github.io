@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantum Annealing | Valter</title>
+    <link>https://valteruo.github.io/tags/quantum-annealing/</link>
+      <atom:link href="https://valteruo.github.io/tags/quantum-annealing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quantum Annealing</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Quantum Annealing</title>
+      <link>https://valteruo.github.io/tags/quantum-annealing/</link>
+    </image>
+    
+    <item>
+      <title>Quantum Annealing: Emerging Exploration for Database Optimization</title>
+      <link>https://valteruo.github.io/papers/tutorial_quantum_week_24/</link>
+      <pubDate>Tue, 17 Sep 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/tutorial_quantum_week_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphs on Qubits: Demonstrating Three Graph Algorithms on Quantum Computers</title>
+      <link>https://valteruo.github.io/papers/graphs_on_qubits_qdsm24/</link>
+      <pubDate>Fri, 30 Aug 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/graphs_on_qubits_qdsm24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Annealing Method for Dynamic Virtual Machine and Task Allocation in Cloud Infrastructures from A Sustainability Perspective</title>
+      <link>https://valteruo.github.io/papers/smdb23/</link>
+      <pubDate>Mon, 03 Apr 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/smdb23/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

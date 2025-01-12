@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Toffoli Gate Teleportation | Valter</title>
+    <link>https://valteruo.github.io/tags/toffoli-gate-teleportation/</link>
+      <atom:link href="https://valteruo.github.io/tags/toffoli-gate-teleportation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Toffoli Gate Teleportation</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Toffoli Gate Teleportation</title>
+      <link>https://valteruo.github.io/tags/toffoli-gate-teleportation/</link>
+    </image>
+    
+    <item>
+      <title>Gate Teleportation in Noisy Quantum Networks with the SquidASM Simulator</title>
+      <link>https://valteruo.github.io/papers/workshop_paper_quantum_week_24/</link>
+      <pubDate>Wed, 18 Sep 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/workshop_paper_quantum_week_24/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

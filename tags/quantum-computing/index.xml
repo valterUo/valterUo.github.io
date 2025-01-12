@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantum Computing | Valter</title>
+    <link>https://valteruo.github.io/tags/quantum-computing/</link>
+      <atom:link href="https://valteruo.github.io/tags/quantum-computing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quantum Computing</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Quantum Computing</title>
+      <link>https://valteruo.github.io/tags/quantum-computing/</link>
+    </image>
+    
+    <item>
+      <title>Tensor Decompositions and Adiabatic Quantum Computing for Discovering Practical Matrix Multiplication Algorithms</title>
+      <link>https://valteruo.github.io/papers/technical_paper_quantum_week_24/</link>
+      <pubDate>Fri, 20 Sep 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/technical_paper_quantum_week_24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Machine Learning: Foundation, New Techniques, and Opportunities for Database Research</title>
+      <link>https://valteruo.github.io/papers/sigmod23/</link>
+      <pubDate>Thu, 22 Jun 2023 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/sigmod23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synergy between Quantum Computers and Databases</title>
+      <link>https://valteruo.github.io/papers/phd_workshop_vldb22/</link>
+      <pubDate>Mon, 05 Sep 2022 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/phd_workshop_vldb22/</guid>
+      <description>&lt;p&gt;A short paper that outlines my research connecting quantum computing, databases and category theory.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

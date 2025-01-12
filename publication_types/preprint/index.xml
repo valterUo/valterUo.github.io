@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Preprint | Valter</title>
+    <link>https://valteruo.github.io/publication_types/preprint/</link>
+      <atom:link href="https://valteruo.github.io/publication_types/preprint/index.xml" rel="self" type="application/rss+xml" />
+    <description>Preprint</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 19 Jun 2024 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Preprint</title>
+      <link>https://valteruo.github.io/publication_types/preprint/</link>
+    </image>
+    
+    <item>
+      <title>SQL2Circuits: Estimating Metrics for SQL Queries with a Quantum Natural Language Processing Method</title>
+      <link>https://valteruo.github.io/papers/sql2circuits/</link>
+      <pubDate>Wed, 19 Jun 2024 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/sql2circuits/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,76 +5,68 @@
     <link>https://valteruo.github.io/publication/</link>
       <atom:link href="https://valteruo.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 22 Jun 2023 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://valteruo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://valteruo.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Publications</title>
       <link>https://valteruo.github.io/publication/</link>
     </image>
     
     <item>
-      <title>Quantum Machine Learning: Foundation, New Techniques, and Opportunities for Database Research</title>
-      <link>https://valteruo.github.io/publication/sigmod23/</link>
-      <pubDate>Thu, 22 Jun 2023 01:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/publication/sigmod23/</guid>
-      <description>&lt;p&gt;See &lt;a href=&#34;https://www.helsinki.fi/en/researchgroups/unified-database-management-systems-udbms/sigmod-2023-tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&amp;rsquo;s website&lt;/a&gt; for more details. I will update the paper and more information when they are available.&lt;/p&gt;
+      <title>An example preprint / working paper</title>
+      <link>https://valteruo.github.io/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/preprint/</guid>
+      <description>&lt;p&gt;This work is driven by the results in my &lt;a href=&#34;https://valteruo.github.io/publication/conference-paper/&#34;&gt;previous paper&lt;/a&gt; on LLMs.&lt;/p&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Quantum Annealing Method for Dynamic Virtual Machine and Task Allocation in Cloud Infrastructures from A Sustainability Perspective</title>
-      <link>https://valteruo.github.io/publication/smdb23/</link>
-      <pubDate>Mon, 03 Apr 2023 01:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/publication/smdb23/</guid>
-      <description>&lt;p&gt;I will update link to the paper after it is published.&lt;/p&gt;
+      <title>An example journal article</title>
+      <link>https://valteruo.github.io/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Synergy between Quantum Computers and Databases</title>
-      <link>https://valteruo.github.io/publication/vldb22_phd_workshop/</link>
-      <pubDate>Mon, 05 Sep 2022 01:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/publication/vldb22_phd_workshop/</guid>
-      <description>&lt;p&gt;A short paper that outlines my research connecting quantum computing, databases and category theory.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Stability Index of Real Varieties – Theorem of Bröcker and Scheiderer</title>
-      <link>https://valteruo.github.io/publication/masters_thesis/</link>
-      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/publication/masters_thesis/</guid>
-      <description>&lt;p&gt;In this work, I prove the theorem of Bröcker and Scheiderer for basic open semi-algebraic sets. The theorem provides an upper bound for a stability index of a real variety. The theory is based on real closed fields which generalize real numbers. A real variety is a subset of a real closed field that is defined by polynomial equalities. Every semi-algebraic set is defined by a boolean combination of polynomial equations and inequalities of the sign conditions involving a finite number of polynomials. The basic semi-algebraic sets are those semi-algebraic sets that are defined solely by the sign conditions. In other words, we can construct semi-algebraic sets from the basic semi-algebraic sets by taking the finite unions, intersections, and complements of the basic semi-algebraic sets.&lt;/p&gt;
-&lt;p&gt;Then the stability index of a real variety indicates the upper bound of numbers of polynomials that are required to express an arbitrary semi-algebraic subset of the variety. The theorem of Bröcker and Scheiderer shows that such upper bound exists and is finite for basic open semi-algebraic subsets of a real variety.&lt;/p&gt;
-&lt;p&gt;This work aims to be detailed in the proofs and represent sufficient prerequisites and references. The first chapter introduces the topic generally and motivates to study the theorem. The second chapter provides advanced prerequisites in algebra. One of such results is the factorial theorem of a total ring of fractions. Other advanced topics include radicals, prime ideals, associative algebras, a dimension of a ring, and various quotient structures.&lt;/p&gt;
-&lt;p&gt;The third chapter defines real closed fields and semi-algebraic sets that are the fundamental building blocks of the theory. The third chapter also develops the theory of quadratic forms. The main result of this chapter is Witt’s cancellation theorem. We also shortly describe the Tsen-Lang theorem.&lt;/p&gt;
-&lt;p&gt;The fourth chapter is about Pfister forms. Pfister forms are special kinds of quadratic forms that we extensively use in the proof of the main theorem. First, we define general Pfister forms over fields. Then we develop their theory over the fields of rational functions. Generally, Pfister forms share multiple similar properties as quadratic forms.&lt;/p&gt;
-&lt;p&gt;The fifth chapter represents one- and two-dimensional examples of the main theorem. These examples are based on research that is done on constructive approaches to the theorem of Bröcker and Scheiderer. The examples clarify and motivate the result from an algorithmic perspective. Finally, we prove the main theorem of the work. The proof is heavily based on Pfister forms.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Formal Category Theoretical Framework for Multi-model Data Transformations</title>
-      <link>https://valteruo.github.io/publication/poly21/</link>
-      <pubDate>Fri, 20 Aug 2021 10:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/publication/poly21/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MultiCategory: Multi-Model Query Processing Meets Category Theory and Functional Programming</title>
-      <link>https://valteruo.github.io/publication/multicategory_demo_system_vldb21/</link>
-      <pubDate>Fri, 20 Aug 2021 08:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/publication/multicategory_demo_system_vldb21/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Multi-model Query Processing Meets Category Theory and Functional Programming</title>
-      <link>https://valteruo.github.io/publication/seadata21/</link>
-      <pubDate>Fri, 20 Aug 2021 01:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/publication/seadata21/</guid>
-      <description>&lt;p&gt;Invited short paper for SEAData workshop at VLDB 2021.&lt;/p&gt;
+      <title>An example conference paper</title>
+      <link>https://valteruo.github.io/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
