@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Higher-Order Binary Optimization | Valter</title>
+    <link>https://valteruo.github.io/tags/higher-order-binary-optimization/</link>
+      <atom:link href="https://valteruo.github.io/tags/higher-order-binary-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Higher-Order Binary Optimization</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2025 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
+      <title>Higher-Order Binary Optimization</title>
+      <link>https://valteruo.github.io/tags/higher-order-binary-optimization/</link>
+    </image>
+    
+    <item>
+      <title>Left-Deep Join Order Selection with Higher-Order Unconstrained Binary Optimization on Quantum Computers</title>
+      <link>https://valteruo.github.io/papers/qjoin/</link>
+      <pubDate>Sat, 01 Feb 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/qjoin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

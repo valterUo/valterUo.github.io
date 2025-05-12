@@ -5,12 +5,21 @@
     <link>https://valteruo.github.io/workshops/</link>
       <atom:link href="https://valteruo.github.io/workshops/index.xml" rel="self" type="application/rss+xml" />
     <description>Workshops</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Aug 2024 00:00:01 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Oct 2025 00:00:01 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Workshops</title>
       <link>https://valteruo.github.io/workshops/</link>
     </image>
+    
+    <item>
+      <title>International Semantic Intelligence Conference (ISIC 2025)</title>
+      <link>https://valteruo.github.io/workshops/isic25/</link>
+      <pubDate>Mon, 06 Oct 2025 00:00:01 +0000</pubDate>
+      <guid>https://valteruo.github.io/workshops/isic25/</guid>
+      <description>&lt;p&gt;Role: proceedings chair and program committee member&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>International Workshop on Quantum Data Science and Management (QDSM 2024)</title>

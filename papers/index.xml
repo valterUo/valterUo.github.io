@@ -5,12 +5,28 @@
     <link>https://valteruo.github.io/papers/</link>
       <atom:link href="https://valteruo.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
     <description>Papers</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Apr 2025 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Papers</title>
       <link>https://valteruo.github.io/papers/</link>
     </image>
+    
+    <item>
+      <title>Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation</title>
+      <link>https://valteruo.github.io/papers/llm_circuit_generation/</link>
+      <pubDate>Tue, 15 Apr 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/llm_circuit_generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Left-Deep Join Order Selection with Higher-Order Unconstrained Binary Optimization on Quantum Computers</title>
+      <link>https://valteruo.github.io/papers/qjoin/</link>
+      <pubDate>Sat, 01 Feb 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/qjoin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Tensor Decompositions and Adiabatic Quantum Computing for Discovering Practical Matrix Multiplication Algorithms</title>

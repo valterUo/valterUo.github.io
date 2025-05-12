@@ -5,12 +5,28 @@
     <link>https://valteruo.github.io/publication_types/preprint/</link>
       <atom:link href="https://valteruo.github.io/publication_types/preprint/index.xml" rel="self" type="application/rss+xml" />
     <description>Preprint</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 19 Jun 2024 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Apr 2025 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Preprint</title>
       <link>https://valteruo.github.io/publication_types/preprint/</link>
     </image>
+    
+    <item>
+      <title>Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation</title>
+      <link>https://valteruo.github.io/papers/llm_circuit_generation/</link>
+      <pubDate>Tue, 15 Apr 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/llm_circuit_generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Left-Deep Join Order Selection with Higher-Order Unconstrained Binary Optimization on Quantum Computers</title>
+      <link>https://valteruo.github.io/papers/qjoin/</link>
+      <pubDate>Sat, 01 Feb 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/qjoin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SQL2Circuits: Estimating Metrics for SQL Queries with a Quantum Natural Language Processing Method</title>

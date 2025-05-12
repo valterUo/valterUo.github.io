@@ -5,12 +5,20 @@
     <link>https://valteruo.github.io/tags/join-order-optimization/</link>
       <atom:link href="https://valteruo.github.io/tags/join-order-optimization/index.xml" rel="self" type="application/rss+xml" />
     <description>Join Order Optimization</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2025 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Join Order Optimization</title>
       <link>https://valteruo.github.io/tags/join-order-optimization/</link>
     </image>
+    
+    <item>
+      <title>Left-Deep Join Order Selection with Higher-Order Unconstrained Binary Optimization on Quantum Computers</title>
+      <link>https://valteruo.github.io/papers/qjoin/</link>
+      <pubDate>Sat, 01 Feb 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/qjoin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Quantum Annealing: Emerging Exploration for Database Optimization</title>
