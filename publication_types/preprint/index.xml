@@ -5,7 +5,7 @@
     <link>https://valteruo.github.io/publication_types/preprint/</link>
       <atom:link href="https://valteruo.github.io/publication_types/preprint/index.xml" rel="self" type="application/rss+xml" />
     <description>Preprint</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Apr 2025 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Nov 2025 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Preprint</title>
@@ -13,18 +13,34 @@
     </image>
     
     <item>
-      <title>Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation</title>
-      <link>https://valteruo.github.io/papers/llm_circuit_generation/</link>
-      <pubDate>Tue, 15 Apr 2025 01:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/papers/llm_circuit_generation/</guid>
+      <title>ZX-DB: A Graph Database for Quantum Circuit Simplification and Rewriting via the ZX-Calculus</title>
+      <link>https://valteruo.github.io/papers/zx_db_graph_database/</link>
+      <pubDate>Mon, 17 Nov 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/zx_db_graph_database/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Left-Deep Join Order Selection with Higher-Order Unconstrained Binary Optimization on Quantum Computers</title>
-      <link>https://valteruo.github.io/papers/qjoin/</link>
-      <pubDate>Sat, 01 Feb 2025 01:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/papers/qjoin/</guid>
+      <title>QUASAR: Quantum Assembly Code Generation Using Tool-Augmented LLMs via Agentic RL</title>
+      <link>https://valteruo.github.io/papers/quasar_quantum_assembly/</link>
+      <pubDate>Wed, 01 Oct 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/quasar_quantum_assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Information-Theoretical Size Bounds for Conjunctive Queries with Functional Dependencies</title>
+      <link>https://valteruo.github.io/papers/quantum_information_bounds/</link>
+      <pubDate>Mon, 09 Jun 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/quantum_information_bounds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation</title>
+      <link>https://valteruo.github.io/papers/llm_circuit_generation/</link>
+      <pubDate>Tue, 15 Apr 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/llm_circuit_generation/</guid>
       <description></description>
     </item>
     

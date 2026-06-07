@@ -5,12 +5,20 @@
     <link>https://valteruo.github.io/tags/quantum-machine-learning/</link>
       <atom:link href="https://valteruo.github.io/tags/quantum-machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Quantum Machine Learning</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 19 Jun 2024 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 18 Sep 2025 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Quantum Machine Learning</title>
       <link>https://valteruo.github.io/tags/quantum-machine-learning/</link>
     </image>
+    
+    <item>
+      <title>Utilizing Quantum Computing to Improve the Quality of Data</title>
+      <link>https://valteruo.github.io/papers/utilizing_quantum_data_quality/</link>
+      <pubDate>Thu, 18 Sep 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/utilizing_quantum_data_quality/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SQL2Circuits: Estimating Metrics for SQL Queries with a Quantum Natural Language Processing Method</title>

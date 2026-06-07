@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finance | Valter</title>
+    <link>https://valteruo.github.io/tags/finance/</link>
+      <atom:link href="https://valteruo.github.io/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    <description>Finance</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Sep 2025 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
+      <title>Finance</title>
+      <link>https://valteruo.github.io/tags/finance/</link>
+    </image>
+    
+    <item>
+      <title>Higher-Order Portfolio Optimization with Quantum Approximate Optimization Algorithm</title>
+      <link>https://valteruo.github.io/papers/higher_order_portfolio_optimization/</link>
+      <pubDate>Mon, 01 Sep 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/higher_order_portfolio_optimization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,6 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://valteruo.github.io/tags/agentic-systems/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/llms/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/openqasm/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/publication_types/paper-conference/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/publication_types/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-circuits/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-program-synthesis/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/reinforcement-learning/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/vista_quantum_synthesis/</loc>
+    <lastmod>2026-05-26T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/ansatz-design/</loc>
+    <lastmod>2026-04-12T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/entangling-capability/</loc>
+    <lastmod>2026-04-12T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/expressibility/</loc>
+    <lastmod>2026-04-12T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/geometric-quantum-machine-learning/</loc>
+    <lastmod>2026-04-12T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/subgroup-twirling/</loc>
+    <lastmod>2026-04-12T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/symmetries/</loc>
+    <lastmod>2026-04-12T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/twirlator_symmetry_qml/</loc>
+    <lastmod>2026-04-12T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/circuit-simplification/</loc>
+    <lastmod>2025-11-17T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/graph-databases/</loc>
+    <lastmod>2025-11-17T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/publication_types/preprint/</loc>
+    <lastmod>2025-11-17T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-circuit-optimization/</loc>
+    <lastmod>2025-11-17T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-computing/</loc>
+    <lastmod>2025-11-17T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/zx-calculus/</loc>
+    <lastmod>2025-11-17T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/zx_db_graph_database/</loc>
+    <lastmod>2025-11-17T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/classical-solvers/</loc>
+    <lastmod>2025-10-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/higher-order-binary-optimization/</loc>
+    <lastmod>2025-10-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/join-order-optimization/</loc>
+    <lastmod>2025-10-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/publication_types/journal/</loc>
+    <lastmod>2025-10-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/qjoin/</loc>
+    <lastmod>2025-10-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-annealing/</loc>
+    <lastmod>2025-10-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/relational-databases/</loc>
+    <lastmod>2025-10-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://valteruo.github.io/workshops/isic25/</loc>
     <lastmod>2025-10-06T00:00:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,56 +138,112 @@
     <lastmod>2025-10-06T00:00:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://valteruo.github.io/papers/llm_circuit_generation/</loc>
-    <lastmod>2025-04-15T01:00:00+00:00</lastmod>
+    <loc>https://valteruo.github.io/tags/agentic-reinforcement-learning/</loc>
+    <lastmod>2025-10-01T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://valteruo.github.io/tags/llms/</loc>
-    <lastmod>2025-04-15T01:00:00+00:00</lastmod>
+    <loc>https://valteruo.github.io/tags/large-language-models/</loc>
+    <lastmod>2025-10-01T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://valteruo.github.io/papers/</loc>
-    <lastmod>2025-04-15T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication_types/preprint/</loc>
-    <lastmod>2025-04-15T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication_types/</loc>
-    <lastmod>2025-04-15T01:00:00+00:00</lastmod>
+    <loc>https://valteruo.github.io/tags/quantum-assembly/</loc>
+    <lastmod>2025-10-01T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://valteruo.github.io/tags/quantum-circuit-generation/</loc>
+    <lastmod>2025-10-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/quasar_quantum_assembly/</loc>
+    <lastmod>2025-10-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/anomaly-detection/</loc>
+    <lastmod>2025-09-18T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/data-quality/</loc>
+    <lastmod>2025-09-18T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-machine-learning/</loc>
+    <lastmod>2025-09-18T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-optimization/</loc>
+    <lastmod>2025-09-18T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/utilizing_quantum_data_quality/</loc>
+    <lastmod>2025-09-18T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/finance/</loc>
+    <lastmod>2025-09-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/higher-order-moments/</loc>
+    <lastmod>2025-09-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/higher_order_portfolio_optimization/</loc>
+    <lastmod>2025-09-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/portfolio-optimization/</loc>
+    <lastmod>2025-09-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/qaoa/</loc>
+    <lastmod>2025-09-01T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/measurement-operations/</loc>
+    <lastmod>2025-07-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/perspectives_quantum_measurements/</loc>
+    <lastmod>2025-07-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-algorithms/</loc>
+    <lastmod>2025-07-07T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/circuit-transpilation/</loc>
+    <lastmod>2025-06-23T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/transpiling_quantum_circuits/</loc>
+    <lastmod>2025-06-23T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/conjunctive-queries/</loc>
+    <lastmod>2025-06-09T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/databases/</loc>
+    <lastmod>2025-06-09T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/functional-dependencies/</loc>
+    <lastmod>2025-06-09T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/quantum-information-theory/</loc>
+    <lastmod>2025-06-09T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/quantum_information_bounds/</loc>
+    <lastmod>2025-06-09T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/tags/query-optimization/</loc>
+    <lastmod>2025-06-09T01:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://valteruo.github.io/papers/llm_circuit_generation/</loc>
     <lastmod>2025-04-15T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/</loc>
-    <lastmod>2025-04-15T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/classical-solvers/</loc>
-    <lastmod>2025-02-01T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/higher-order-binary-optimization/</loc>
-    <lastmod>2025-02-01T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/join-order-optimization/</loc>
-    <lastmod>2025-02-01T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/papers/qjoin/</loc>
-    <lastmod>2025-02-01T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/quantum-annealing/</loc>
-    <lastmod>2025-02-01T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/relational-databases/</loc>
-    <lastmod>2025-02-01T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://valteruo.github.io/</loc>
@@ -83,14 +267,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://valteruo.github.io/tags/matrix-multiplication-algorithms/</loc>
-    <lastmod>2024-09-20T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/publication_types/paper-conference/</loc>
-    <lastmod>2024-09-20T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/quantum-computing/</loc>
     <lastmod>2024-09-20T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -175,10 +351,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://valteruo.github.io/tags/category-theory/</loc>
-    <lastmod>2024-06-19T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/quantum-machine-learning/</loc>
     <lastmod>2024-06-19T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -286,10 +458,6 @@
     <lastmod>2023-09-01T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://valteruo.github.io/tags/reinforcement-learning/</loc>
-    <lastmod>2023-09-01T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://valteruo.github.io/tags/tutorial/</loc>
     <lastmod>2023-09-01T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -320,10 +488,6 @@
   </url><url>
     <loc>https://valteruo.github.io/tags/visionary/</loc>
     <lastmod>2023-04-03T01:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://valteruo.github.io/tags/databases/</loc>
-    <lastmod>2022-09-05T01:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://valteruo.github.io/papers/phd_workshop_vldb22/</loc>

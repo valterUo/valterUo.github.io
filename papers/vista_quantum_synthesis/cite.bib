@@ -1,0 +1,13 @@
+@inbook{vista,
+	title        = {Vista: Verifier-in-the-Loop Agentic Reinforcement Learning for Quantum Program Synthesis},
+	author       = {Yu, Cong and Shi, Tuo and Uotila, Valter and Deng, Shilong and You, Lei and Zhao, Bo},
+	year         = 2026,
+	booktitle    = {Proceedings of the ACM Conference on AI and Agentic Systems},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	pages        = {239–252},
+	isbn         = 9798400724152,
+	url          = {https://doi.org/10.1145/3786335.3813148},
+	abstract     = {Quantum program synthesis increasingly depends on external evaluators such as parsers, simulators, and optimizers. In OpenQASM&nbsp;3.0 circuit generation, artifact quality is determined not by text plausibility but by staged execution against tool-defined quantum semantics. This makes verifier-in-the-loop training a systems problem: verifier stages differ sharply in cost, latency, and informativeness, so executing the full verifier on every candidate is inefficient, while collapsing all verifier outcomes into a single reward can destabilize learning.We present Vista, a verifier-in-the-loop agentic reinforcement learning (RL) system for quantum program synthesis, instantiated for OpenQASM&nbsp;3.0 quantum circuit generation. Vista introduces two mechanisms: (i) hierarchical verified reward optimization, which converts staged verifier outcomes into stable learning signals spanning feasibility, behavior, objective quality, and utility; and (ii) budget-aware gated evaluation, which schedules expensive verifier stages using partial evidence from earlier stages. Vista outperforms four classes of baselines—frontier LLM agents, quantum-specific agents, RL post-training agents, and RL agentic tool-use agents. Across quantum optimization tasks, it achieves 1.13 \texttimes{} higher executability at Pass@10, improves semantic solution quality by 1.10 \texttimes{}, and cuts verifier cost by 1.77 \texttimes{} under matched-budget evaluation.},
+	numpages     = 14
+}

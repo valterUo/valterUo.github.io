@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantum Algorithms | Valter</title>
+    <link>https://valteruo.github.io/tags/quantum-algorithms/</link>
+      <atom:link href="https://valteruo.github.io/tags/quantum-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quantum Algorithms</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 07 Jul 2025 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
+      <title>Quantum Algorithms</title>
+      <link>https://valteruo.github.io/tags/quantum-algorithms/</link>
+    </image>
+    
+    <item>
+      <title>Perspectives on Utilization of Measurements in Quantum Algorithms</title>
+      <link>https://valteruo.github.io/papers/perspectives_quantum_measurements/</link>
+      <pubDate>Mon, 07 Jul 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/perspectives_quantum_measurements/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

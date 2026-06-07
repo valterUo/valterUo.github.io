@@ -5,12 +5,20 @@
     <link>https://valteruo.github.io/tags/llms/</link>
       <atom:link href="https://valteruo.github.io/tags/llms/index.xml" rel="self" type="application/rss+xml" />
     <description>LLMs</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Apr 2025 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>LLMs</title>
       <link>https://valteruo.github.io/tags/llms/</link>
     </image>
+    
+    <item>
+      <title>Vista: Verifier-in-the-Loop Agentic Reinforcement Learning for Quantum Program Synthesis</title>
+      <link>https://valteruo.github.io/papers/vista_quantum_synthesis/</link>
+      <pubDate>Tue, 26 May 2026 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/vista_quantum_synthesis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation</title>

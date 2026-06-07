@@ -5,12 +5,52 @@
     <link>https://valteruo.github.io/tags/quantum-computing/</link>
       <atom:link href="https://valteruo.github.io/tags/quantum-computing/index.xml" rel="self" type="application/rss+xml" />
     <description>Quantum Computing</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2024 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Nov 2025 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Quantum Computing</title>
       <link>https://valteruo.github.io/tags/quantum-computing/</link>
     </image>
+    
+    <item>
+      <title>ZX-DB: A Graph Database for Quantum Circuit Simplification and Rewriting via the ZX-Calculus</title>
+      <link>https://valteruo.github.io/papers/zx_db_graph_database/</link>
+      <pubDate>Mon, 17 Nov 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/zx_db_graph_database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QUASAR: Quantum Assembly Code Generation Using Tool-Augmented LLMs via Agentic RL</title>
+      <link>https://valteruo.github.io/papers/quasar_quantum_assembly/</link>
+      <pubDate>Wed, 01 Oct 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/quasar_quantum_assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Utilizing Quantum Computing to Improve the Quality of Data</title>
+      <link>https://valteruo.github.io/papers/utilizing_quantum_data_quality/</link>
+      <pubDate>Thu, 18 Sep 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/utilizing_quantum_data_quality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Higher-Order Portfolio Optimization with Quantum Approximate Optimization Algorithm</title>
+      <link>https://valteruo.github.io/papers/higher_order_portfolio_optimization/</link>
+      <pubDate>Mon, 01 Sep 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/higher_order_portfolio_optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perspectives on Utilization of Measurements in Quantum Algorithms</title>
+      <link>https://valteruo.github.io/papers/perspectives_quantum_measurements/</link>
+      <pubDate>Mon, 07 Jul 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/perspectives_quantum_measurements/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Tensor Decompositions and Adiabatic Quantum Computing for Discovering Practical Matrix Multiplication Algorithms</title>

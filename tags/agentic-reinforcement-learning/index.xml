@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agentic Reinforcement Learning | Valter</title>
+    <link>https://valteruo.github.io/tags/agentic-reinforcement-learning/</link>
+      <atom:link href="https://valteruo.github.io/tags/agentic-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Agentic Reinforcement Learning</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Oct 2025 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
+      <title>Agentic Reinforcement Learning</title>
+      <link>https://valteruo.github.io/tags/agentic-reinforcement-learning/</link>
+    </image>
+    
+    <item>
+      <title>QUASAR: Quantum Assembly Code Generation Using Tool-Augmented LLMs via Agentic RL</title>
+      <link>https://valteruo.github.io/papers/quasar_quantum_assembly/</link>
+      <pubDate>Wed, 01 Oct 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/quasar_quantum_assembly/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

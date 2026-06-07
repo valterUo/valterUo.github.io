@@ -5,7 +5,7 @@
     <link>https://valteruo.github.io/papers/</link>
       <atom:link href="https://valteruo.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
     <description>Papers</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Apr 2025 01:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://valteruo.github.io/media/icon_hu4913341271923834587.png</url>
       <title>Papers</title>
@@ -13,18 +13,90 @@
     </image>
     
     <item>
-      <title>Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation</title>
-      <link>https://valteruo.github.io/papers/llm_circuit_generation/</link>
-      <pubDate>Tue, 15 Apr 2025 01:00:00 +0000</pubDate>
-      <guid>https://valteruo.github.io/papers/llm_circuit_generation/</guid>
+      <title>Vista: Verifier-in-the-Loop Agentic Reinforcement Learning for Quantum Program Synthesis</title>
+      <link>https://valteruo.github.io/papers/vista_quantum_synthesis/</link>
+      <pubDate>Tue, 26 May 2026 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/vista_quantum_synthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twirlator: Pipeline for Analyzing Subgroup Symmetry Effects in Quantum Machine Learning Ansatzes</title>
+      <link>https://valteruo.github.io/papers/twirlator_symmetry_qml/</link>
+      <pubDate>Sun, 12 Apr 2026 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/twirlator_symmetry_qml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ZX-DB: A Graph Database for Quantum Circuit Simplification and Rewriting via the ZX-Calculus</title>
+      <link>https://valteruo.github.io/papers/zx_db_graph_database/</link>
+      <pubDate>Mon, 17 Nov 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/zx_db_graph_database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Left-Deep Join Order Selection with Higher-Order Unconstrained Binary Optimization on Quantum Computers</title>
       <link>https://valteruo.github.io/papers/qjoin/</link>
-      <pubDate>Sat, 01 Feb 2025 01:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Oct 2025 01:00:00 +0000</pubDate>
       <guid>https://valteruo.github.io/papers/qjoin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QUASAR: Quantum Assembly Code Generation Using Tool-Augmented LLMs via Agentic RL</title>
+      <link>https://valteruo.github.io/papers/quasar_quantum_assembly/</link>
+      <pubDate>Wed, 01 Oct 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/quasar_quantum_assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Utilizing Quantum Computing to Improve the Quality of Data</title>
+      <link>https://valteruo.github.io/papers/utilizing_quantum_data_quality/</link>
+      <pubDate>Thu, 18 Sep 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/utilizing_quantum_data_quality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Higher-Order Portfolio Optimization with Quantum Approximate Optimization Algorithm</title>
+      <link>https://valteruo.github.io/papers/higher_order_portfolio_optimization/</link>
+      <pubDate>Mon, 01 Sep 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/higher_order_portfolio_optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perspectives on Utilization of Measurements in Quantum Algorithms</title>
+      <link>https://valteruo.github.io/papers/perspectives_quantum_measurements/</link>
+      <pubDate>Mon, 07 Jul 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/perspectives_quantum_measurements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transpiling Quantum Circuits on Graph Databases</title>
+      <link>https://valteruo.github.io/papers/transpiling_quantum_circuits/</link>
+      <pubDate>Mon, 23 Jun 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/transpiling_quantum_circuits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Information-Theoretical Size Bounds for Conjunctive Queries with Functional Dependencies</title>
+      <link>https://valteruo.github.io/papers/quantum_information_bounds/</link>
+      <pubDate>Mon, 09 Jun 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/quantum_information_bounds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fine-Tuning Large Language Models on Quantum Optimization Problems for Circuit Generation</title>
+      <link>https://valteruo.github.io/papers/llm_circuit_generation/</link>
+      <pubDate>Tue, 15 Apr 2025 01:00:00 +0000</pubDate>
+      <guid>https://valteruo.github.io/papers/llm_circuit_generation/</guid>
       <description></description>
     </item>
     
